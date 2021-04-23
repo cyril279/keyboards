@@ -17,14 +17,15 @@ Inspired by the [reviung series](https://github.com/gtips/reviung), designed spe
 Mechanical & electronic layouts were performed in fusion360 & kicad (respectively).
 
 ### V0.2:
-- untested as of 2021/04/11  
+- working as of 2021/04/23 
 
 # Bill of Materials:  
 
 ## Required:  
-- 1N4148 Smd diodes, 1206 package (39/41)  
+- 1N4148 Smd diodes, 1206 or micromelf package (39/41)  
 - Pg1350 kailh sockets (39/41)  
 - Pg1350 switches (39/41)  
+- 2u choc stabilizer
 - Pro micro (or equivalent)  
 
 ## Optional:
@@ -36,8 +37,8 @@ Mechanical & electronic layouts were performed in fusion360 & kicad (respectivel
 
 ### Backlighting:  
 - 3528 led's (39/41)  
-- Resistors (see backlighting notes), 1206 package, 1/8 watt (39/41)  
-- 4.7k resistor, 1206 package, 1/8 watt (1)  
+- Resistors (see backlighting notes), 1206 or micromelf package, 1/8 watt (39/41)  
+- 4.7k resistor, 1206 or micromelf package, 1/8 watt (1)  
 - N-channel AO3416 MOSFET, SOT-23 package (1)  
 
 Backlighting notes:  
