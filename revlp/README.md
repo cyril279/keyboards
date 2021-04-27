@@ -3,9 +3,9 @@
 # Rev-lp
 Inspired by the [reviung series](https://github.com/gtips/reviung), designed specifically for Kailh pg1350 (choc) switches.
 
-### Firmware
-[QMK](https://github.com/cyril279/qmk_firmware/tree/master/keyboards/b_sides/r41lp)
-[ZMK](https://github.com/cyril279/zmk-firmware/tree/main/app/boards/shields/r41lp)
+### Firmware  
+[QMK](https://github.com/cyril279/qmk_firmware/tree/main/keyboards/b_sides/r41lp)  
+[ZMK](https://github.com/cyril279/zmk-config/tree/main/config)
 
 ### Geometric differences from the reviung series:  
 - 18mm x 17mm choc key-spacing
