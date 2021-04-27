@@ -26,7 +26,7 @@ Mechanical & electronic layouts were performed in fusion360 & kicad (respectivel
 # Bill of Materials:  
 
 ## Required:  
-- 1N4148 Smd diodes, 1206 or melf 0204 package (39/41)  
+- 1N4148 Smd diodes, SOD-123 / SOD-80 / miniMelf package (39/41)  
 - Pg1350 kailh sockets (39/41)  
 - Pg1350 switches (39/41)  
 - 2u choc stabilizer
