@@ -1,10 +1,12 @@
 ![Cover](https://imgur.com/nZNHSaW.jpg)
 
 # Rev-lp
-Inspired by the [reviung series](https://github.com/gtips/reviung), designed specifically for Kailh pg1350 (choc) switches.
+Inspired by the [reviung series](https://github.com/gtips/reviung), designed specifically for Kailh pg1350 (choc) switches.  
 
-### Firmware  
-[QMK](https://github.com/cyril279/qmk_firmware/tree/main/keyboards/b_sides/r41lp)  
+[Build Pics](build.md)  
+
+### Firmware
+[QMK](https://github.com/DubMoto/qmk_firmware/tree/cy41/keyboards/b_sides/rev41lp)  
 [ZMK](https://github.com/cyril279/zmk-config/tree/main/config)
 
 ### Geometric differences from the reviung series:  
