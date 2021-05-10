@@ -7,9 +7,9 @@ Controller must be soldered on face-down.
 I highly recommend socketing the controller.  
 ![build03](https://imgur.com/rJ1ZKQ3.jpg)  
 
-Switchplate is not necessary, but I personally like the added support that the switchplate provides for the switches, as well as the added functionality of the 2u stabilizer.  
-The black strips are .063", adhesive-backed neoprene foam. They change the acoustics of the assembly but not much beyond that.  
+The black strips are .063", adhesive-backed neoprene foam. They provide support while inserting switches, and slightly damp the acoustics of the assembly.  
 ![build04](https://imgur.com/et9bksr.jpg)  
+The switchplate is not necessary, but I like the added functionality of the 2u stabilizer, as well as the added support provided to the switches.  
 ![build05](https://imgur.com/nRZXyZ1.jpg)  
 
 Backlighting:  
