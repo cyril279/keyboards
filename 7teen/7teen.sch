@@ -19,7 +19,7 @@ U 1 1 609BC7C6
 P 8800 2500
 F 0 "U0" H 8775 1561 50  0000 C CNN
 F 1 "SeeeduinoXIAO" H 8775 1470 50  0000 C CNN
-F 2 "keeblib:Seeeduino_XIAO_dual" H 8450 2700 50  0001 C CNN
+F 2 "keeblib:Seeeduino_XIAO_dual_tht" H 8450 2700 50  0001 C CNN
 F 3 "" H 8450 2700 50  0001 C CNN
 	1    8800 2500
 	1    0    0    -1  
@@ -33,15 +33,15 @@ rowC
 Text GLabel 9600 2950 2    50   Input ~ 0
 rowD
 Text GLabel 7950 2050 0    50   Input ~ 0
-col0
+col4
 Text GLabel 7950 2200 0    50   Input ~ 0
-col1
+col3
 Text GLabel 7950 2350 0    50   Input ~ 0
 col2
 Text GLabel 7950 2500 0    50   Input ~ 0
-col3
+col1
 Text GLabel 7950 2650 0    50   Input ~ 0
-col4
+col0
 Text GLabel 7950 2800 0    50   Input ~ 0
 encA
 Text GLabel 7950 2950 0    50   Input ~ 0
@@ -305,34 +305,6 @@ NoConn ~ 8600 1600
 NoConn ~ 8750 1600
 NoConn ~ 8900 1600
 NoConn ~ 9050 1600
-Wire Wire Line
-	4050 3700 4050 4200
-$Comp
-L Device:Rotary_Encoder_Switch SwC4
-U 1 1 60A074BF
-P 4350 4300
-F 0 "SwC4" V 4304 4530 50  0000 L CNN
-F 1 "Rotary_Encoder_Switch" V 4395 4530 50  0000 L CNN
-F 2 "keebio:RotaryEncoder_EC11" H 4200 4460 50  0001 C CNN
-F 3 "~" H 4350 4560 50  0001 C CNN
-	1    4350 4300
-	-1   0    0    1   
-$EndComp
-Text GLabel 4650 4200 2    50   Input ~ 0
-encB
-Text GLabel 4650 4400 2    50   Input ~ 0
-encA
-$Comp
-L power:GND #PWR0103
-U 1 1 60A28C0F
-P 4900 4300
-F 0 "#PWR0103" H 4900 4050 50  0001 C CNN
-F 1 "GND" V 4905 4172 50  0000 R CNN
-F 2 "" H 4900 4300 50  0001 C CNN
-F 3 "" H 4900 4300 50  0001 C CNN
-	1    4900 4300
-	0    -1   -1   0   
-$EndComp
 $Comp
 L Device:D_Small D_A0
 U 1 1 60A3EC5B
@@ -527,9 +499,6 @@ $EndComp
 Wire Wire Line
 	3850 4400 3400 4400
 Connection ~ 3400 4400
-Connection ~ 4050 4200
-Wire Wire Line
-	4900 4300 4650 4300
 Text GLabel 1700 5000 0    50   Input ~ 0
 rowD
 $Comp
@@ -572,8 +541,6 @@ Connection ~ 2400 5000
 Wire Wire Line
 	2400 5000 1900 5000
 Connection ~ 2900 5000
-Wire Wire Line
-	2900 5000 2400 5000
 $Comp
 L power:GND #PWR0104
 U 1 1 60A05940
@@ -585,30 +552,63 @@ F 3 "" H 9600 2200 50  0001 C CNN
 	1    9600 2200
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	4050 4200 4050 4800
-Wire Wire Line
-	2900 5000 3650 5000
 $Comp
-L Device:D_Small D_D4
+L Device:D_Small D_D3
 U 1 1 60B5942F
-P 3650 4900
-F 0 "D_D4" V 3696 4830 50  0000 R CNN
-F 1 "D_Small" V 3605 4830 50  0000 R CNN
-F 2 "keeblib:D_MiniMELF_bsides" V 3650 4900 50  0001 C CNN
-F 3 "~" V 3650 4900 50  0001 C CNN
-	1    3650 4900
+P 3400 4900
+F 0 "D_D3" V 3446 4830 50  0000 R CNN
+F 1 "D_Small" V 3355 4830 50  0000 R CNN
+F 2 "keeblib:D_MiniMELF_bsides" V 3400 4900 50  0001 C CNN
+F 3 "~" V 3400 4900 50  0001 C CNN
+	1    3400 4900
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Switch:SW_Push SwD4
+L Switch:SW_Push SwD3
 U 1 1 60A9A1CE
-P 3850 4800
-F 0 "SwD4" H 3850 5085 50  0000 C CNN
-F 1 "SW_Push" H 3850 4994 50  0000 C CNN
-F 2 "keeblib:pg1353_dual" H 3850 5000 50  0001 C CNN
-F 3 "~" H 3850 5000 50  0001 C CNN
-	1    3850 4800
+P 3600 4800
+F 0 "SwD3" H 3600 5085 50  0000 C CNN
+F 1 "SW_Push" H 3600 4994 50  0000 C CNN
+F 2 "keeblib:pg1353_dual" H 3600 5000 50  0001 C CNN
+F 3 "~" H 3600 5000 50  0001 C CNN
+	1    3600 4800
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4050 3700 4050 4200
+Wire Wire Line
+	4900 4300 4650 4300
+$Comp
+L power:GND #PWR0103
+U 1 1 60A28C0F
+P 4900 4300
+F 0 "#PWR0103" H 4900 4050 50  0001 C CNN
+F 1 "GND" V 4905 4172 50  0000 R CNN
+F 2 "" H 4900 4300 50  0001 C CNN
+F 3 "" H 4900 4300 50  0001 C CNN
+	1    4900 4300
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4650 4400 2    50   Input ~ 0
+encA
+Text GLabel 4650 4200 2    50   Input ~ 0
+encB
+$Comp
+L Device:Rotary_Encoder_Switch SwC4
+U 1 1 60A074BF
+P 4350 4300
+F 0 "SwC4" V 4304 4530 50  0000 L CNN
+F 1 "Rotary_Encoder_Switch" V 4395 4530 50  0000 L CNN
+F 2 "keebio:RotaryEncoder_EC11" H 4200 4460 50  0001 C CNN
+F 3 "~" H 4350 4560 50  0001 C CNN
+	1    4350 4300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2900 5000 3400 5000
+Wire Wire Line
+	2400 5000 2900 5000
+Wire Wire Line
+	3800 4800 3800 4200
+Connection ~ 3800 4200
 $EndSCHEMATC
