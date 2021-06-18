@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name keeblib)(type Legacy)(uri ${KIPRJMOD}/../../../keeblib.pretty/keebio.lib)(options "")(descr ""))
+  (lib (name keebMCU)(type Legacy)(uri ${KIPRJMOD}/../../../keebMCU.pretty/keebMCU.lib)(options "")(descr ""))
+)

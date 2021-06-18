@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name keeblib)(type Legacy)(uri ${KIPRJMOD/../../keeblib.pretty/keebio.lib)(options "")(descr ""))
+  (lib (name controller)(type Legacy)(uri "${KIPRJMOD}/../../controller.pretty/Seeeduino XIAO.lib")(options "")(descr ""))
+)
