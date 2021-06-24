@@ -14,12 +14,12 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L keebMCU:ProMicro U1
+L keebMCU:ProMicroNiced U1
 U 1 1 603AD690
 P 7950 3050
-F 0 "U1" H 7950 3887 60  0000 C CNN
-F 1 "ProMicro" H 7950 3781 60  0000 C CNN
-F 2 "keeblib:ArduinoProMicro" V 9000 550 60  0001 C CNN
+F 0 "U1" H 7950 4000 60  0000 C CNN
+F 1 "ProMicro" H 7950 3900 60  0000 C CNN
+F 2 "keebMCU:ProMicroNiced" V 9000 550 60  0001 C CNN
 F 3 "" V 9000 550 60  0001 C CNN
 	1    7950 3050
 	1    0    0    -1  
@@ -79,26 +79,12 @@ F 3 "" H 8650 2600 50  0001 C CNN
 	1    8650 2600
 	0    -1   -1   0   
 $EndComp
-$Comp
-L power:GND #PWR0103
-U 1 1 60489A7A
-P 7100 2700
-F 0 "#PWR0103" H 7100 2450 50  0001 C CNN
-F 1 "GND" V 7105 2572 50  0000 R CNN
-F 2 "" H 7100 2700 50  0001 C CNN
-F 3 "" H 7100 2700 50  0001 C CNN
-	1    7100 2700
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	7250 2700 7150 2700
+	7250 2700 6700 2700
 Wire Wire Line
-	7250 2800 7150 2800
+	7250 2800 6700 2800
 Wire Wire Line
-	7150 2800 7150 2700
-Connection ~ 7150 2700
-Wire Wire Line
-	7150 2700 7100 2700
+	6700 2800 6700 2700
 $Comp
 L Device:D D_A1
 U 1 1 60AE88AD
@@ -571,72 +557,33 @@ Text GLabel 8650 3100 2    50   Input ~ 0
 rowC
 Text GLabel 8650 2900 2    50   Input ~ 0
 rowA
-Text GLabel 8650 2700 2    50   Input ~ 0
-RST
 $Comp
 L power:GND #PWR0104
 U 1 1 606FC079
-P 7800 5700
-F 0 "#PWR0104" H 7800 5450 50  0001 C CNN
-F 1 "GND" H 7805 5527 50  0000 C CNN
-F 2 "" H 7800 5700 50  0001 C CNN
-F 3 "" H 7800 5700 50  0001 C CNN
-	1    7800 5700
-	1    0    0    -1  
+P 6700 2700
+F 0 "#PWR0104" H 6700 2450 50  0001 C CNN
+F 1 "GND" H 6705 2527 50  0000 C CNN
+F 2 "" H 6700 2700 50  0001 C CNN
+F 3 "" H 6700 2700 50  0001 C CNN
+	1    6700 2700
+	0    1    1    0   
 $EndComp
 $Comp
 L Switch:SW_SPDT SW01
 U 1 1 606F98AE
-P 8300 5500
-F 0 "SW01" H 8250 5750 50  0000 C CNN
-F 1 "SW_SPDT" H 8250 5650 50  0000 C CNN
-F 2 "keeblib:switch_SSSS811101" H 8300 5500 50  0001 C CNN
-F 3 "~" H 8300 5500 50  0001 C CNN
-	1    8300 5500
+P 6950 2300
+F 0 "SW01" H 6900 2550 50  0000 C CNN
+F 1 "SW_SPDT" H 6900 2450 50  0000 C CNN
+F 2 "keeblib:switch_SSSS811101" H 6950 2300 50  0001 C CNN
+F 3 "~" H 6950 2300 50  0001 C CNN
+	1    6950 2300
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Battery_Cell BT01
-U 1 1 6070045C
-P 8800 5400
-F 0 "BT01" V 8550 5450 50  0000 C CNN
-F 1 "Battery_Cell" V 8650 5450 50  0000 C CNN
-F 2 "keeblib:cell_pads" V 8800 5460 50  0001 C CNN
-F 3 "~" V 8800 5460 50  0001 C CNN
-	1    8800 5400
-	0    1    1    0   
-$EndComp
-Text GLabel 9000 5400 2    50   Input ~ 0
-RAW
-$Comp
-L Switch:SW_Push SW02
-U 1 1 608D2DB9
-P 8400 4900
-F 0 "SW02" H 8400 5185 50  0000 C CNN
-F 1 "SW_Push" H 8400 5094 50  0000 C CNN
-F 2 "keeblib:alps_sksn" H 8400 5100 50  0001 C CNN
-F 3 "~" H 8400 5100 50  0001 C CNN
-	1    8400 4900
-	1    0    0    -1  
-$EndComp
-Text GLabel 8600 4900 2    50   Input ~ 0
-RST
 Wire Wire Line
-	8200 4900 7800 4900
+	6750 2300 6700 2300
 Wire Wire Line
-	8100 5500 7800 5500
-Wire Wire Line
-	7800 5500 7800 5700
-NoConn ~ 8500 5600
-Wire Wire Line
-	8500 5400 8700 5400
-Text Notes 8500 5400 1    50   ~ 0
-BattNeg
-Connection ~ 7800 5500
-Wire Wire Line
-	7800 4900 7800 5500
-Text GLabel 8650 2500 2    50   Input ~ 0
-RAW
+	6700 2300 6700 2700
+NoConn ~ 7150 2400
 NoConn ~ 8650 2800
 NoConn ~ 8650 3600
 Wire Wire Line
@@ -1438,4 +1385,16 @@ Connection ~ 5700 2250
 Wire Wire Line
 	5700 2250 5700 2950
 Connection ~ 5700 2950
+NoConn ~ 8650 2700
+Wire Wire Line
+	8650 2400 8750 2400
+Wire Wire Line
+	8750 2400 8750 2500
+Wire Wire Line
+	8750 2500 8650 2500
+Wire Wire Line
+	7250 2400 7250 2200
+Wire Wire Line
+	7250 2200 7150 2200
+Connection ~ 6700 2700
 $EndSCHEMATC
