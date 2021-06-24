@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name keebio)(type Legacy)(uri ${KEEB_GIT_DIR}/keeblib.pretty/keebio.lib)(options "")(descr ""))
+  (lib (name seeeduino)(type Legacy)(uri "${KEEB_GIT_DIR}/keeblib.pretty/Seeeduino XIAO.lib")(options "")(descr ""))
+)

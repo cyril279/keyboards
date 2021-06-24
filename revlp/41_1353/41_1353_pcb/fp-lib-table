@@ -2,5 +2,4 @@
   (lib (name 41_1353)(type KiCad)(uri ${KIPRJMOD}/../../41_1353/41_1353.pretty)(options "")(descr ""))
   (lib (name keeblib)(type KiCad)(uri ${KIPRJMOD}/../../../keeblib.pretty)(options "")(descr ""))
   (lib (name keebMCU)(type KiCad)(uri ${KIPRJMOD}/../../../keebMCU.pretty)(options "")(descr ""))
-  (lib (name 41_1353_pcb)(type KiCad)(uri /home/cyril/workshop/git_keyboards/revlp/41_1353/41_1353_pcb.pretty)(options "")(descr ""))
 )
