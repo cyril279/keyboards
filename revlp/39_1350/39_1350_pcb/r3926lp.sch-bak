@@ -1,0 +1,2550 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L keebio:ProMicro U1
+U 1 1 603AD690
+P 9150 1950
+F 0 "U1" H 9150 2787 60  0000 C CNN
+F 1 "ProMicro" H 9150 2681 60  0000 C CNN
+F 2 "keeblib:ArduinoProMicro" V 10200 -550 60  0001 C CNN
+F 3 "" V 10200 -550 60  0001 C CNN
+	1    9150 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D0
+U 1 1 604DD7FE
+P 1350 1550
+F 0 "D0" V 1396 1470 50  0000 R CNN
+F 1 "D" V 1305 1470 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 1350 1550 50  0001 C CNN
+F 3 "~" H 1350 1550 50  0001 C CNN
+	1    1350 1550
+	0    -1   -1   0   
+$EndComp
+Text GLabel 2050 1250 1    50   Input ~ 0
+col0
+Text GLabel 8450 2000 0    50   Input ~ 0
+col0
+Text GLabel 8450 2100 0    50   Input ~ 0
+col1
+Text GLabel 8450 2200 0    50   Input ~ 0
+col2
+Text GLabel 8450 2300 0    50   Input ~ 0
+col3
+Text GLabel 8450 2400 0    50   Input ~ 0
+col4
+Text GLabel 8450 2500 0    50   Input ~ 0
+col5
+Text GLabel 9850 1800 2    50   Input ~ 0
+row0
+Text GLabel 9850 2400 2    50   Input ~ 0
+row1
+Text GLabel 9850 1900 2    50   Input ~ 0
+row2
+Text GLabel 9850 2300 2    50   Input ~ 0
+row3
+Text GLabel 9850 2000 2    50   Input ~ 0
+row4
+Text GLabel 9850 2200 2    50   Input ~ 0
+row5
+Text GLabel 9850 2100 2    50   Input ~ 0
+row6
+NoConn ~ 8450 1500
+NoConn ~ 8450 1400
+NoConn ~ 9850 1600
+NoConn ~ 9850 1400
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 60471E1A
+P 8650 5350
+F 0 "#FLG0101" H 8650 5425 50  0001 C CNN
+F 1 "PWR_FLAG" H 8650 5500 50  0000 C CNN
+F 2 "" H 8650 5350 50  0001 C CNN
+F 3 "~" H 8650 5350 50  0001 C CNN
+	1    8650 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 60484632
+P 8650 5350
+F 0 "#PWR0101" H 8650 5100 50  0001 C CNN
+F 1 "GND" H 8650 5200 50  0000 C CNN
+F 2 "" H 8650 5350 50  0001 C CNN
+F 3 "" H 8650 5350 50  0001 C CNN
+	1    8650 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 60488C68
+P 9850 1500
+F 0 "#PWR0102" H 9850 1250 50  0001 C CNN
+F 1 "GND" V 9855 1372 50  0000 R CNN
+F 2 "" H 9850 1500 50  0001 C CNN
+F 3 "" H 9850 1500 50  0001 C CNN
+	1    9850 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 60489A7A
+P 8300 1600
+F 0 "#PWR0103" H 8300 1350 50  0001 C CNN
+F 1 "GND" V 8305 1472 50  0000 R CNN
+F 2 "" H 8300 1600 50  0001 C CNN
+F 3 "" H 8300 1600 50  0001 C CNN
+	1    8300 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8450 1600 8350 1600
+Wire Wire Line
+	8450 1700 8350 1700
+Wire Wire Line
+	8350 1700 8350 1600
+Connection ~ 8350 1600
+Wire Wire Line
+	8350 1600 8300 1600
+Text GLabel 1200 1850 0    50   Input ~ 0
+row0
+Text GLabel 2250 1250 1    50   Input ~ 0
+ledOut
+$Comp
+L Device:R_Small_US R0
+U 1 1 60909042
+P 1600 1700
+F 0 "R0" H 1532 1654 50  0000 R CNN
+F 1 "R" H 1532 1745 50  0000 R CNN
+F 2 "Resistor_SMD:R_MiniMELF_MMA-0204" H 1600 1700 50  0001 C CNN
+F 3 "~" H 1600 1700 50  0001 C CNN
+	1    1600 1700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2050 1250 2050 1400
+Wire Wire Line
+	2050 1400 2000 1400
+Wire Wire Line
+	1600 1500 1600 1600
+Wire Wire Line
+	1600 1400 1350 1400
+Wire Wire Line
+	1350 1700 1350 1850
+Wire Wire Line
+	1350 1850 1200 1850
+$Comp
+L Device:D D10
+U 1 1 60A8983F
+P 1350 2450
+F 0 "D10" V 1396 2370 50  0000 R CNN
+F 1 "D" V 1305 2370 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 1350 2450 50  0001 C CNN
+F 3 "~" H 1350 2450 50  0001 C CNN
+	1    1350 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push_LED SW10
+U 1 1 60A89CF5
+P 1800 2400
+F 0 "SW10" H 1800 2685 50  0000 C CNN
+F 1 "SW_Push" H 1800 2594 50  0000 C CNN
+F 2 "keeblib:PG1350_socket_smdLed" H 1800 2600 50  0001 C CNN
+F 3 "~" H 1800 2600 50  0001 C CNN
+	1    1800 2400
+	1    0    0    -1  
+$EndComp
+Text GLabel 1200 2750 0    50   Input ~ 0
+row1
+$Comp
+L Device:R_Small_US R10
+U 1 1 60A89D01
+P 1600 2600
+F 0 "R10" H 1532 2554 50  0000 R CNN
+F 1 "R" H 1532 2645 50  0000 R CNN
+F 2 "Resistor_SMD:R_MiniMELF_MMA-0204" H 1600 2600 50  0001 C CNN
+F 3 "~" H 1600 2600 50  0001 C CNN
+	1    1600 2600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2050 2300 2000 2300
+Wire Wire Line
+	1600 2400 1600 2500
+Wire Wire Line
+	1600 2300 1350 2300
+Wire Wire Line
+	1600 2700 1600 2850
+Wire Wire Line
+	1350 2600 1350 2750
+Wire Wire Line
+	1350 2750 1200 2750
+Wire Wire Line
+	2000 2400 2150 2400
+$Comp
+L Device:D D1
+U 1 1 60AE88AD
+P 2400 1550
+F 0 "D1" V 2446 1470 50  0000 R CNN
+F 1 "D" V 2355 1470 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 2400 1550 50  0001 C CNN
+F 3 "~" H 2400 1550 50  0001 C CNN
+	1    2400 1550
+	0    -1   -1   0   
+$EndComp
+Text GLabel 3100 1250 1    50   Input ~ 0
+col1
+$Comp
+L Switch:SW_Push_LED SW1
+U 1 1 60AE89C6
+P 2850 1500
+F 0 "SW1" H 2850 1785 50  0000 C CNN
+F 1 "SW_Push" H 2850 1694 50  0000 C CNN
+F 2 "keeblib:PG1350_socket_smdLed" H 2850 1700 50  0001 C CNN
+F 3 "~" H 2850 1700 50  0001 C CNN
+	1    2850 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R1
+U 1 1 60AE89D2
+P 2650 1700
+F 0 "R1" H 2582 1654 50  0000 R CNN
+F 1 "R" H 2582 1745 50  0000 R CNN
+F 2 "Resistor_SMD:R_MiniMELF_MMA-0204" H 2650 1700 50  0001 C CNN
+F 3 "~" H 2650 1700 50  0001 C CNN
+	1    2650 1700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3100 1250 3100 1400
+Wire Wire Line
+	3100 1400 3050 1400
+Wire Wire Line
+	2650 1500 2650 1600
+Wire Wire Line
+	2650 1400 2400 1400
+Wire Wire Line
+	2650 1800 2650 1950
+Wire Wire Line
+	2400 1700 2400 1850
+Wire Wire Line
+	2400 1850 1350 1850
+Wire Wire Line
+	3200 1500 3200 2050
+$Comp
+L Device:D D11
+U 1 1 60B0FD09
+P 2400 2450
+F 0 "D11" V 2446 2370 50  0000 R CNN
+F 1 "D" V 2355 2370 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 2400 2450 50  0001 C CNN
+F 3 "~" H 2400 2450 50  0001 C CNN
+	1    2400 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push_LED SW11
+U 1 1 60B0FE63
+P 2850 2400
+F 0 "SW11" H 2850 2685 50  0000 C CNN
+F 1 "SW_Push" H 2850 2594 50  0000 C CNN
+F 2 "keeblib:PG1350_socket_smdLed" H 2850 2600 50  0001 C CNN
+F 3 "~" H 2850 2600 50  0001 C CNN
+	1    2850 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R11
+U 1 1 60B0FE6E
+P 2650 2600
+F 0 "R11" H 2582 2554 50  0000 R CNN
+F 1 "R" H 2582 2645 50  0000 R CNN
+F 2 "Resistor_SMD:R_MiniMELF_MMA-0204" H 2650 2600 50  0001 C CNN
+F 3 "~" H 2650 2600 50  0001 C CNN
+	1    2650 2600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3100 2300 3050 2300
+Wire Wire Line
+	2650 2400 2650 2500
+Wire Wire Line
+	2650 2300 2400 2300
+Wire Wire Line
+	2650 2700 2650 2850
+Wire Wire Line
+	2400 2600 2400 2750
+Wire Wire Line
+	2400 2750 1350 2750
+Wire Wire Line
+	3050 2400 3200 2400
+$Comp
+L Device:D D20
+U 1 1 60B50824
+P 1350 3250
+F 0 "D20" V 1396 3170 50  0000 R CNN
+F 1 "D" V 1305 3170 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 1350 3250 50  0001 C CNN
+F 3 "~" H 1350 3250 50  0001 C CNN
+	1    1350 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push_LED SW20
+U 1 1 60B50ADE
+P 1800 3200
+F 0 "SW20" H 1800 3485 50  0000 C CNN
+F 1 "SW_Push" H 1800 3394 50  0000 C CNN
+F 2 "keeblib:PG1350_socket_smdLed" H 1800 3400 50  0001 C CNN
+F 3 "~" H 1800 3400 50  0001 C CNN
+	1    1800 3200
+	1    0    0    -1  
+$EndComp
+Text GLabel 1200 3550 0    50   Input ~ 0
+row2
+$Comp
+L Device:R_Small_US R20
+U 1 1 60B50AEA
+P 1600 3400
+F 0 "R20" H 1532 3354 50  0000 R CNN
+F 1 "R" H 1532 3445 50  0000 R CNN
+F 2 "Resistor_SMD:R_MiniMELF_MMA-0204" H 1600 3400 50  0001 C CNN
+F 3 "~" H 1600 3400 50  0001 C CNN
+	1    1600 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2050 2300 2050 3100
+Wire Wire Line
+	2050 3100 2000 3100
+Wire Wire Line
+	2150 2400 2150 3200
+Wire Wire Line
+	1600 3200 1600 3300
+Wire Wire Line
+	1600 3100 1350 3100
+Wire Wire Line
+	1600 3500 1600 3650
+Wire Wire Line
+	1350 3400 1350 3550
+Wire Wire Line
+	1350 3550 1200 3550
+Wire Wire Line
+	2000 3200 2150 3200
+$Comp
+L Device:D D30
+U 1 1 60B50AFF
+P 1350 4050
+F 0 "D30" V 1396 3970 50  0000 R CNN
+F 1 "D" V 1305 3970 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 1350 4050 50  0001 C CNN
+F 3 "~" H 1350 4050 50  0001 C CNN
+	1    1350 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push_LED SW30
+U 1 1 60B50B09
+P 1800 4000
+F 0 "SW30" H 1800 4285 50  0000 C CNN
+F 1 "SW_Push" H 1800 4194 50  0000 C CNN
+F 2 "keeblib:PG1350_socket_smdLed" H 1800 4200 50  0001 C CNN
+F 3 "~" H 1800 4200 50  0001 C CNN
+	1    1800 4000
+	1    0    0    -1  
+$EndComp
+Text GLabel 1200 4350 0    50   Input ~ 0
+row3
+$Comp
+L Device:R_Small_US R30
+U 1 1 60B50B15
+P 1600 4200
+F 0 "R30" H 1532 4154 50  0000 R CNN
+F 1 "R" H 1532 4245 50  0000 R CNN
+F 2 "Resistor_SMD:R_MiniMELF_MMA-0204" H 1600 4200 50  0001 C CNN
+F 3 "~" H 1600 4200 50  0001 C CNN
+	1    1600 4200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2050 3900 2000 3900
+Wire Wire Line
+	1600 4000 1600 4100
+Wire Wire Line
+	1600 3900 1350 3900
+Wire Wire Line
+	1600 4300 1600 4450
+Wire Wire Line
+	1350 4200 1350 4350
+Wire Wire Line
+	1350 4350 1200 4350
+Wire Wire Line
+	2000 4000 2150 4000
+Connection ~ 2050 3100
+Connection ~ 2150 3200
+Wire Wire Line
+	2050 3100 2050 3900
+$Comp
+L Device:D D21
+U 1 1 60B50B2B
+P 2400 3250
+F 0 "D21" V 2446 3170 50  0000 R CNN
+F 1 "D" V 2355 3170 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 2400 3250 50  0001 C CNN
+F 3 "~" H 2400 3250 50  0001 C CNN
+	1    2400 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push_LED SW21
+U 1 1 60B50B35
+P 2850 3200
+F 0 "SW21" H 2850 3485 50  0000 C CNN
+F 1 "SW_Push" H 2850 3394 50  0000 C CNN
+F 2 "keeblib:PG1350_socket_smdLed" H 2850 3400 50  0001 C CNN
+F 3 "~" H 2850 3400 50  0001 C CNN
+	1    2850 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R21
+U 1 1 60B50B40
+P 2650 3400
+F 0 "R21" H 2582 3354 50  0000 R CNN
+F 1 "R" H 2582 3445 50  0000 R CNN
+F 2 "Resistor_SMD:R_MiniMELF_MMA-0204" H 2650 3400 50  0001 C CNN
+F 3 "~" H 2650 3400 50  0001 C CNN
+	1    2650 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3100 2300 3100 3100
+Wire Wire Line
+	3100 3100 3050 3100
+Wire Wire Line
+	3200 2400 3200 3200
+Wire Wire Line
+	2650 3200 2650 3300
+Wire Wire Line
+	2650 3100 2400 3100
+Wire Wire Line
+	2650 3500 2650 3650
+Wire Wire Line
+	2400 3400 2400 3550
+Wire Wire Line
+	2400 3550 1350 3550
+Wire Wire Line
+	3050 3200 3200 3200
+Connection ~ 3100 3100
+Connection ~ 3200 3200
+Wire Wire Line
+	3100 3100 3100 3900
+Wire Wire Line
+	3200 3200 3200 4000
+Wire Wire Line
+	2150 3200 2150 4000
+$Comp
+L Device:D D31
+U 1 1 60B50B5B
+P 2400 4050
+F 0 "D31" V 2446 3970 50  0000 R CNN
+F 1 "D" V 2355 3970 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 2400 4050 50  0001 C CNN
+F 3 "~" H 2400 4050 50  0001 C CNN
+	1    2400 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push_LED SW31
+U 1 1 60B50B65
+P 2850 4000
+F 0 "SW31" H 2850 4285 50  0000 C CNN
+F 1 "SW_Push" H 2850 4194 50  0000 C CNN
+F 2 "keeblib:PG1350_socket_smdLed" H 2850 4200 50  0001 C CNN
+F 3 "~" H 2850 4200 50  0001 C CNN
+	1    2850 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R31
+U 1 1 60B50B70
+P 2650 4200
+F 0 "R31" H 2582 4154 50  0000 R CNN
+F 1 "R" H 2582 4245 50  0000 R CNN
+F 2 "Resistor_SMD:R_MiniMELF_MMA-0204" H 2650 4200 50  0001 C CNN
+F 3 "~" H 2650 4200 50  0001 C CNN
+	1    2650 4200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3100 3900 3050 3900
+Wire Wire Line
+	2650 4000 2650 4100
+Wire Wire Line
+	2650 3900 2400 3900
+Wire Wire Line
+	2650 4300 2650 4450
+Wire Wire Line
+	2400 4200 2400 4350
+Wire Wire Line
+	2400 4350 1350 4350
+Wire Wire Line
+	3050 4000 3200 4000
+Connection ~ 2050 2300
+Connection ~ 2150 2400
+Connection ~ 3100 2300
+Connection ~ 3200 2400
+$Comp
+L Device:D D40
+U 1 1 60CC8B03
+P 1350 4850
+F 0 "D40" V 1396 4770 50  0000 R CNN
+F 1 "D" V 1305 4770 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 1350 4850 50  0001 C CNN
+F 3 "~" H 1350 4850 50  0001 C CNN
+	1    1350 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push_LED SW40
+U 1 1 60CC8E85
+P 1800 4800
+F 0 "SW40" H 1800 5085 50  0000 C CNN
+F 1 "SW_Push" H 1800 4994 50  0000 C CNN
+F 2 "keeblib:PG1350_socket_smdLed" H 1800 5000 50  0001 C CNN
+F 3 "~" H 1800 5000 50  0001 C CNN
+	1    1800 4800
+	1    0    0    -1  
+$EndComp
+Text GLabel 1200 5150 0    50   Input ~ 0
+row4
+$Comp
+L Device:R_Small_US R40
+U 1 1 60CC8E91
+P 1600 5000
+F 0 "R40" H 1532 4954 50  0000 R CNN
+F 1 "R" H 1532 5045 50  0000 R CNN
+F 2 "Resistor_SMD:R_MiniMELF_MMA-0204" H 1600 5000 50  0001 C CNN
+F 3 "~" H 1600 5000 50  0001 C CNN
+	1    1600 5000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2050 3900 2050 4700
+Wire Wire Line
+	2050 4700 2000 4700
+Wire Wire Line
+	2150 4000 2150 4800
+Wire Wire Line
+	1600 4800 1600 4900
+Wire Wire Line
+	1600 4700 1350 4700
+Wire Wire Line
+	1600 5100 1600 5250
+Wire Wire Line
+	1350 5000 1350 5150
+Wire Wire Line
+	1350 5150 1200 5150
+Wire Wire Line
+	2000 4800 2150 4800
+$Comp
+L Device:D D50
+U 1 1 60CC8EA6
+P 1350 5650
+F 0 "D50" V 1396 5570 50  0000 R CNN
+F 1 "D" V 1305 5570 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 1350 5650 50  0001 C CNN
+F 3 "~" H 1350 5650 50  0001 C CNN
+	1    1350 5650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push_LED SW50
+U 1 1 60CC8EB0
+P 1800 5600
+F 0 "SW50" H 1800 5885 50  0000 C CNN
+F 1 "SW_Push" H 1800 5794 50  0000 C CNN
+F 2 "keeblib:PG1350_socket_smdLed" H 1800 5800 50  0001 C CNN
+F 3 "~" H 1800 5800 50  0001 C CNN
+	1    1800 5600
+	1    0    0    -1  
+$EndComp
+Text GLabel 1200 5950 0    50   Input ~ 0
+row5
+$Comp
+L Device:R_Small_US R50
+U 1 1 60CC8EBC
+P 1600 5800
+F 0 "R50" H 1532 5754 50  0000 R CNN
+F 1 "R" H 1532 5845 50  0000 R CNN
+F 2 "Resistor_SMD:R_MiniMELF_MMA-0204" H 1600 5800 50  0001 C CNN
+F 3 "~" H 1600 5800 50  0001 C CNN
+	1    1600 5800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2050 5500 2000 5500
+Wire Wire Line
+	1600 5600 1600 5700
+Wire Wire Line
+	1600 5500 1350 5500
+Wire Wire Line
+	1600 5900 1600 6050
+Wire Wire Line
+	1350 5800 1350 5950
+Wire Wire Line
+	1350 5950 1200 5950
+Wire Wire Line
+	2000 5600 2150 5600
+Connection ~ 2050 4700
+Connection ~ 2150 4800
+Wire Wire Line
+	2050 4700 2050 5500
+$Comp
+L Device:D D41
+U 1 1 60CC8ED2
+P 2400 4850
+F 0 "D41" V 2446 4770 50  0000 R CNN
+F 1 "D" V 2355 4770 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 2400 4850 50  0001 C CNN
+F 3 "~" H 2400 4850 50  0001 C CNN
+	1    2400 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push_LED SW41
+U 1 1 60CC8EDC
+P 2850 4800
+F 0 "SW41" H 2850 5085 50  0000 C CNN
+F 1 "SW_Push" H 2850 4994 50  0000 C CNN
+F 2 "keeblib:PG1350_socket_smdLed" H 2850 5000 50  0001 C CNN
+F 3 "~" H 2850 5000 50  0001 C CNN
+	1    2850 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R41
+U 1 1 60CC8EE7
+P 2650 5000
+F 0 "R41" H 2582 4954 50  0000 R CNN
+F 1 "R" H 2582 5045 50  0000 R CNN
+F 2 "Resistor_SMD:R_MiniMELF_MMA-0204" H 2650 5000 50  0001 C CNN
+F 3 "~" H 2650 5000 50  0001 C CNN
+	1    2650 5000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3100 3900 3100 4700
+Wire Wire Line
+	3100 4700 3050 4700
+Wire Wire Line
+	3200 4000 3200 4800
+Wire Wire Line
+	2650 4800 2650 4900
+Wire Wire Line
+	2650 4700 2400 4700
+Wire Wire Line
+	2650 5100 2650 5250
+Wire Wire Line
+	2400 5000 2400 5150
+Wire Wire Line
+	2400 5150 1350 5150
+Wire Wire Line
+	3050 4800 3200 4800
+Connection ~ 3100 4700
+Connection ~ 3200 4800
+Wire Wire Line
+	3100 4700 3100 5500
+Wire Wire Line
+	3200 4800 3200 5600
+Wire Wire Line
+	2150 4800 2150 5600
+$Comp
+L Device:D D51
+U 1 1 60CC8F02
+P 2400 5650
+F 0 "D51" V 2446 5570 50  0000 R CNN
+F 1 "D" V 2355 5570 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 2400 5650 50  0001 C CNN
+F 3 "~" H 2400 5650 50  0001 C CNN
+	1    2400 5650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push_LED SW51
+U 1 1 60CC8F0C
+P 2850 5600
+F 0 "SW51" H 2850 5885 50  0000 C CNN
+F 1 "SW_Push" H 2850 5794 50  0000 C CNN
+F 2 "keeblib:PG1350_socket_smdLed" H 2850 5800 50  0001 C CNN
+F 3 "~" H 2850 5800 50  0001 C CNN
+	1    2850 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R51
+U 1 1 60CC8F17
+P 2650 5800
+F 0 "R51" H 2582 5754 50  0000 R CNN
+F 1 "R" H 2582 5845 50  0000 R CNN
+F 2 "Resistor_SMD:R_MiniMELF_MMA-0204" H 2650 5800 50  0001 C CNN
+F 3 "~" H 2650 5800 50  0001 C CNN
+	1    2650 5800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3100 5500 3050 5500
+Wire Wire Line
+	2650 5600 2650 5700
+Wire Wire Line
+	2650 5500 2400 5500
+Wire Wire Line
+	2650 5900 2650 6050
+Wire Wire Line
+	2400 5800 2400 5950
+Wire Wire Line
+	2400 5950 1350 5950
+Wire Wire Line
+	3050 5600 3200 5600
+Connection ~ 2050 3900
+Connection ~ 2150 4000
+Connection ~ 3100 3900
+Connection ~ 3200 4000
+$Comp
+L Device:D D2
+U 1 1 60D0E454
+P 3350 1550
+F 0 "D2" V 3396 1470 50  0000 R CNN
+F 1 "D" V 3305 1470 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 3350 1550 50  0001 C CNN
+F 3 "~" H 3350 1550 50  0001 C CNN
+	1    3350 1550
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4050 1250 1    50   Input ~ 0
+col2
+$Comp
+L Switch:SW_Push_LED SW2
+U 1 1 60D0E787
+P 3800 1500
+F 0 "SW2" H 3800 1785 50  0000 C CNN
+F 1 "SW_Push" H 3800 1694 50  0000 C CNN
+F 2 "keeblib:PG1350_socket_smdLed" H 3800 1700 50  0001 C CNN
+F 3 "~" H 3800 1700 50  0001 C CNN
+	1    3800 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R2
+U 1 1 60D0E793
+P 3600 1700
+F 0 "R2" H 3532 1654 50  0000 R CNN
+F 1 "R" H 3532 1745 50  0000 R CNN
+F 2 "Resistor_SMD:R_MiniMELF_MMA-0204" H 3600 1700 50  0001 C CNN
+F 3 "~" H 3600 1700 50  0001 C CNN
+	1    3600 1700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4050 1250 4050 1400
+Wire Wire Line
+	4050 1400 4000 1400
+Wire Wire Line
+	3600 1500 3600 1600
+Wire Wire Line
+	3600 1400 3350 1400
+Wire Wire Line
+	3600 1800 3600 1950
+Wire Wire Line
+	3600 1950 2650 1950
+Wire Wire Line
+	3350 1700 3350 1850
+Wire Wire Line
+	3350 1850 2400 1850
+Wire Wire Line
+	4150 1500 4150 2050
+$Comp
+L Device:D D12
+U 1 1 60D0E7AB
+P 3350 2450
+F 0 "D12" V 3396 2370 50  0000 R CNN
+F 1 "D" V 3305 2370 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 3350 2450 50  0001 C CNN
+F 3 "~" H 3350 2450 50  0001 C CNN
+	1    3350 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push_LED SW12
+U 1 1 60D0E7B5
+P 3800 2400
+F 0 "SW12" H 3800 2685 50  0000 C CNN
+F 1 "SW_Push" H 3800 2594 50  0000 C CNN
+F 2 "keeblib:PG1350_socket_smdLed" H 3800 2600 50  0001 C CNN
+F 3 "~" H 3800 2600 50  0001 C CNN
+	1    3800 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R12
+U 1 1 60D0E7C0
+P 3600 2600
+F 0 "R12" H 3532 2554 50  0000 R CNN
+F 1 "R" H 3532 2645 50  0000 R CNN
+F 2 "Resistor_SMD:R_MiniMELF_MMA-0204" H 3600 2600 50  0001 C CNN
+F 3 "~" H 3600 2600 50  0001 C CNN
+	1    3600 2600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4050 2300 4000 2300
+Wire Wire Line
+	3600 2400 3600 2500
+Wire Wire Line
+	3600 2300 3350 2300
+Wire Wire Line
+	3600 2700 3600 2850
+Wire Wire Line
+	3600 2850 2650 2850
+Wire Wire Line
+	3350 2600 3350 2750
+Wire Wire Line
+	3350 2750 2400 2750
+Wire Wire Line
+	4000 2400 4150 2400
+$Comp
+L Device:D D22
+U 1 1 60D0E7D2
+P 3350 3250
+F 0 "D22" V 3396 3170 50  0000 R CNN
+F 1 "D" V 3305 3170 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 3350 3250 50  0001 C CNN
+F 3 "~" H 3350 3250 50  0001 C CNN
+	1    3350 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push_LED SW22
+U 1 1 60D0E7DC
+P 3800 3200
+F 0 "SW22" H 3800 3485 50  0000 C CNN
+F 1 "SW_Push" H 3800 3394 50  0000 C CNN
+F 2 "keeblib:PG1350_socket_smdLed" H 3800 3400 50  0001 C CNN
+F 3 "~" H 3800 3400 50  0001 C CNN
+	1    3800 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R22
+U 1 1 60D0E7E7
+P 3600 3400
+F 0 "R22" H 3532 3354 50  0000 R CNN
+F 1 "R" H 3532 3445 50  0000 R CNN
+F 2 "Resistor_SMD:R_MiniMELF_MMA-0204" H 3600 3400 50  0001 C CNN
+F 3 "~" H 3600 3400 50  0001 C CNN
+	1    3600 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4050 2300 4050 3100
+Wire Wire Line
+	4050 3100 4000 3100
+Wire Wire Line
+	4150 2400 4150 3200
+Wire Wire Line
+	3600 3200 3600 3300
+Wire Wire Line
+	3600 3100 3350 3100
+Wire Wire Line
+	3600 3500 3600 3650
+Wire Wire Line
+	3600 3650 2650 3650
+Wire Wire Line
+	3350 3400 3350 3550
+Wire Wire Line
+	3350 3550 2400 3550
+Wire Wire Line
+	4000 3200 4150 3200
+Connection ~ 4050 3100
+Connection ~ 4150 3200
+Wire Wire Line
+	4050 3100 4050 3900
+Wire Wire Line
+	4150 3200 4150 4000
+$Comp
+L Device:D D32
+U 1 1 60D0E7FF
+P 3350 4050
+F 0 "D32" V 3396 3970 50  0000 R CNN
+F 1 "D" V 3305 3970 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 3350 4050 50  0001 C CNN
+F 3 "~" H 3350 4050 50  0001 C CNN
+	1    3350 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push_LED SW32
+U 1 1 60D0E809
+P 3800 4000
+F 0 "SW32" H 3800 4285 50  0000 C CNN
+F 1 "SW_Push" H 3800 4194 50  0000 C CNN
+F 2 "keeblib:PG1350_socket_smdLed" H 3800 4200 50  0001 C CNN
+F 3 "~" H 3800 4200 50  0001 C CNN
+	1    3800 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R32
+U 1 1 60D0E814
+P 3600 4200
+F 0 "R32" H 3532 4154 50  0000 R CNN
+F 1 "R" H 3532 4245 50  0000 R CNN
+F 2 "Resistor_SMD:R_MiniMELF_MMA-0204" H 3600 4200 50  0001 C CNN
+F 3 "~" H 3600 4200 50  0001 C CNN
+	1    3600 4200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4050 3900 4000 3900
+Wire Wire Line
+	3600 4000 3600 4100
+Wire Wire Line
+	3600 3900 3350 3900
+Wire Wire Line
+	3600 4300 3600 4450
+Wire Wire Line
+	3600 4450 2650 4450
+Wire Wire Line
+	3350 4200 3350 4350
+Wire Wire Line
+	3350 4350 2400 4350
+Wire Wire Line
+	4000 4000 4150 4000
+Connection ~ 4050 2300
+Connection ~ 4150 2400
+$Comp
+L Device:D D42
+U 1 1 60D0E828
+P 3350 4850
+F 0 "D42" V 3396 4770 50  0000 R CNN
+F 1 "D" V 3305 4770 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 3350 4850 50  0001 C CNN
+F 3 "~" H 3350 4850 50  0001 C CNN
+	1    3350 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push_LED SW42
+U 1 1 60D0E832
+P 3800 4800
+F 0 "SW42" H 3800 5085 50  0000 C CNN
+F 1 "SW_Push" H 3800 4994 50  0000 C CNN
+F 2 "keeblib:PG1350_socket_smdLed" H 3800 5000 50  0001 C CNN
+F 3 "~" H 3800 5000 50  0001 C CNN
+	1    3800 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R42
+U 1 1 60D0E83D
+P 3600 5000
+F 0 "R42" H 3532 4954 50  0000 R CNN
+F 1 "R" H 3532 5045 50  0000 R CNN
+F 2 "Resistor_SMD:R_MiniMELF_MMA-0204" H 3600 5000 50  0001 C CNN
+F 3 "~" H 3600 5000 50  0001 C CNN
+	1    3600 5000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4050 3900 4050 4700
+Wire Wire Line
+	4050 4700 4000 4700
+Wire Wire Line
+	4150 4000 4150 4800
+Wire Wire Line
+	3600 4800 3600 4900
+Wire Wire Line
+	3600 4700 3350 4700
+Wire Wire Line
+	3600 5100 3600 5250
+Wire Wire Line
+	3600 5250 2650 5250
+Wire Wire Line
+	3350 5000 3350 5150
+Wire Wire Line
+	3350 5150 2400 5150
+Wire Wire Line
+	4000 4800 4150 4800
+Connection ~ 4050 4700
+Connection ~ 4150 4800
+Wire Wire Line
+	4050 4700 4050 5500
+Wire Wire Line
+	4150 4800 4150 5600
+$Comp
+L Device:D D52
+U 1 1 60D0E855
+P 3350 5650
+F 0 "D52" V 3396 5570 50  0000 R CNN
+F 1 "D" V 3305 5570 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 3350 5650 50  0001 C CNN
+F 3 "~" H 3350 5650 50  0001 C CNN
+	1    3350 5650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push_LED SW52
+U 1 1 60D0E85F
+P 3800 5600
+F 0 "SW52" H 3800 5885 50  0000 C CNN
+F 1 "SW_Push" H 3800 5794 50  0000 C CNN
+F 2 "keeblib:PG1350_socket_smdLed" H 3800 5800 50  0001 C CNN
+F 3 "~" H 3800 5800 50  0001 C CNN
+	1    3800 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R52
+U 1 1 60D0E86A
+P 3600 5800
+F 0 "R52" H 3532 5754 50  0000 R CNN
+F 1 "R" H 3532 5845 50  0000 R CNN
+F 2 "Resistor_SMD:R_MiniMELF_MMA-0204" H 3600 5800 50  0001 C CNN
+F 3 "~" H 3600 5800 50  0001 C CNN
+	1    3600 5800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4050 5500 4000 5500
+Wire Wire Line
+	3600 5600 3600 5700
+Wire Wire Line
+	3600 5500 3350 5500
+Wire Wire Line
+	3600 5900 3600 6050
+Wire Wire Line
+	3600 6050 2650 6050
+Wire Wire Line
+	3350 5800 3350 5950
+Wire Wire Line
+	3350 5950 2400 5950
+Wire Wire Line
+	4000 5600 4150 5600
+Connection ~ 4050 3900
+Connection ~ 4150 4000
+Connection ~ 2400 1850
+Connection ~ 2400 2750
+Connection ~ 2400 3550
+Connection ~ 2400 4350
+Connection ~ 2400 5150
+Connection ~ 2400 5950
+$Comp
+L Device:D D3
+U 1 1 60D50262
+P 4300 1550
+F 0 "D3" V 4346 1470 50  0000 R CNN
+F 1 "D" V 4255 1470 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 4300 1550 50  0001 C CNN
+F 3 "~" H 4300 1550 50  0001 C CNN
+	1    4300 1550
+	0    -1   -1   0   
+$EndComp
+Text GLabel 5000 1250 1    50   Input ~ 0
+col3
+$Comp
+L Switch:SW_Push_LED SW3
+U 1 1 60D50721
+P 4750 1500
+F 0 "SW3" H 4750 1785 50  0000 C CNN
+F 1 "SW_Push" H 4750 1694 50  0000 C CNN
+F 2 "keeblib:PG1350_socket_smdLed" H 4750 1700 50  0001 C CNN
+F 3 "~" H 4750 1700 50  0001 C CNN
+	1    4750 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R3
+U 1 1 60D5072D
+P 4550 1700
+F 0 "R3" H 4482 1654 50  0000 R CNN
+F 1 "R" H 4482 1745 50  0000 R CNN
+F 2 "Resistor_SMD:R_MiniMELF_MMA-0204" H 4550 1700 50  0001 C CNN
+F 3 "~" H 4550 1700 50  0001 C CNN
+	1    4550 1700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5000 1250 5000 1400
+Wire Wire Line
+	5000 1400 4950 1400
+Wire Wire Line
+	4550 1500 4550 1600
+Wire Wire Line
+	4550 1400 4300 1400
+Wire Wire Line
+	4550 1800 4550 1950
+Wire Wire Line
+	4550 1950 3600 1950
+Wire Wire Line
+	4300 1700 4300 1850
+Wire Wire Line
+	4300 1850 3350 1850
+Wire Wire Line
+	5100 1500 5100 2050
+$Comp
+L Device:D D13
+U 1 1 60D50745
+P 4300 2450
+F 0 "D13" V 4346 2370 50  0000 R CNN
+F 1 "D" V 4255 2370 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 4300 2450 50  0001 C CNN
+F 3 "~" H 4300 2450 50  0001 C CNN
+	1    4300 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push_LED SW13
+U 1 1 60D5074F
+P 4750 2400
+F 0 "SW13" H 4750 2685 50  0000 C CNN
+F 1 "SW_Push" H 4750 2594 50  0000 C CNN
+F 2 "keeblib:PG1350_socket_smdLed" H 4750 2600 50  0001 C CNN
+F 3 "~" H 4750 2600 50  0001 C CNN
+	1    4750 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R13
+U 1 1 60D5075A
+P 4550 2600
+F 0 "R13" H 4482 2554 50  0000 R CNN
+F 1 "R" H 4482 2645 50  0000 R CNN
+F 2 "Resistor_SMD:R_MiniMELF_MMA-0204" H 4550 2600 50  0001 C CNN
+F 3 "~" H 4550 2600 50  0001 C CNN
+	1    4550 2600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5000 2300 4950 2300
+Wire Wire Line
+	4550 2400 4550 2500
+Wire Wire Line
+	4550 2300 4300 2300
+Wire Wire Line
+	4550 2700 4550 2850
+Wire Wire Line
+	4550 2850 3600 2850
+Wire Wire Line
+	4300 2600 4300 2750
+Wire Wire Line
+	4300 2750 3350 2750
+Wire Wire Line
+	4950 2400 5100 2400
+$Comp
+L Device:D D23
+U 1 1 60D5076C
+P 4300 3250
+F 0 "D23" V 4346 3170 50  0000 R CNN
+F 1 "D" V 4255 3170 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 4300 3250 50  0001 C CNN
+F 3 "~" H 4300 3250 50  0001 C CNN
+	1    4300 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push_LED SW23
+U 1 1 60D50776
+P 4750 3200
+F 0 "SW23" H 4750 3485 50  0000 C CNN
+F 1 "SW_Push" H 4750 3394 50  0000 C CNN
+F 2 "keeblib:PG1350_socket_smdLed" H 4750 3400 50  0001 C CNN
+F 3 "~" H 4750 3400 50  0001 C CNN
+	1    4750 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R23
+U 1 1 60D50781
+P 4550 3400
+F 0 "R23" H 4482 3354 50  0000 R CNN
+F 1 "R" H 4482 3445 50  0000 R CNN
+F 2 "Resistor_SMD:R_MiniMELF_MMA-0204" H 4550 3400 50  0001 C CNN
+F 3 "~" H 4550 3400 50  0001 C CNN
+	1    4550 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5000 2300 5000 3100
+Wire Wire Line
+	5000 3100 4950 3100
+Wire Wire Line
+	5100 2400 5100 3200
+Wire Wire Line
+	4550 3200 4550 3300
+Wire Wire Line
+	4550 3100 4300 3100
+Wire Wire Line
+	4550 3500 4550 3650
+Wire Wire Line
+	4550 3650 3600 3650
+Wire Wire Line
+	4300 3400 4300 3550
+Wire Wire Line
+	4300 3550 3350 3550
+Wire Wire Line
+	4950 3200 5100 3200
+Connection ~ 5000 3100
+Connection ~ 5100 3200
+Wire Wire Line
+	5000 3100 5000 3900
+Wire Wire Line
+	5100 3200 5100 4000
+Wire Wire Line
+	5000 3900 4950 3900
+Wire Wire Line
+	4550 4000 4550 4100
+Wire Wire Line
+	4550 3900 4300 3900
+Wire Wire Line
+	4550 4300 4550 4450
+Wire Wire Line
+	4550 4450 3600 4450
+Wire Wire Line
+	4300 4200 4300 4350
+Wire Wire Line
+	4300 4350 3350 4350
+Wire Wire Line
+	4950 4000 5100 4000
+Connection ~ 5000 2300
+Connection ~ 5100 2400
+$Comp
+L Device:D D43
+U 1 1 60D507C2
+P 4300 4850
+F 0 "D43" V 4346 4770 50  0000 R CNN
+F 1 "D" V 4255 4770 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 4300 4850 50  0001 C CNN
+F 3 "~" H 4300 4850 50  0001 C CNN
+	1    4300 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push_LED SW43
+U 1 1 60D507CC
+P 4750 4800
+F 0 "SW43" H 4750 5085 50  0000 C CNN
+F 1 "SW_Push" H 4750 4994 50  0000 C CNN
+F 2 "keeblib:PG1350_socket_smdLed" H 4750 5000 50  0001 C CNN
+F 3 "~" H 4750 5000 50  0001 C CNN
+	1    4750 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R43
+U 1 1 60D507D7
+P 4550 5000
+F 0 "R43" H 4482 4954 50  0000 R CNN
+F 1 "R" H 4482 5045 50  0000 R CNN
+F 2 "Resistor_SMD:R_MiniMELF_MMA-0204" H 4550 5000 50  0001 C CNN
+F 3 "~" H 4550 5000 50  0001 C CNN
+	1    4550 5000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5000 3900 5000 4700
+Wire Wire Line
+	5000 4700 4950 4700
+Wire Wire Line
+	5100 4000 5100 4800
+Wire Wire Line
+	4550 4800 4550 4900
+Wire Wire Line
+	4550 4700 4300 4700
+Wire Wire Line
+	4550 5100 4550 5250
+Wire Wire Line
+	4550 5250 3600 5250
+Wire Wire Line
+	4300 5000 4300 5150
+Wire Wire Line
+	4300 5150 3350 5150
+Wire Wire Line
+	4950 4800 5100 4800
+Connection ~ 5000 4700
+Connection ~ 5100 4800
+Wire Wire Line
+	5000 4700 5000 5500
+Wire Wire Line
+	5100 4800 5100 5600
+$Comp
+L Device:D D53
+U 1 1 60D507EF
+P 4300 5650
+F 0 "D53" V 4346 5570 50  0000 R CNN
+F 1 "D" V 4255 5570 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 4300 5650 50  0001 C CNN
+F 3 "~" H 4300 5650 50  0001 C CNN
+	1    4300 5650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push_LED SW53
+U 1 1 60D507F9
+P 4750 5600
+F 0 "SW53" H 4750 5885 50  0000 C CNN
+F 1 "SW_Push" H 4750 5794 50  0000 C CNN
+F 2 "keeblib:PG1350_socket_smdLed" H 4750 5800 50  0001 C CNN
+F 3 "~" H 4750 5800 50  0001 C CNN
+	1    4750 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R53
+U 1 1 60D50804
+P 4550 5800
+F 0 "R53" H 4482 5754 50  0000 R CNN
+F 1 "R" H 4482 5845 50  0000 R CNN
+F 2 "Resistor_SMD:R_MiniMELF_MMA-0204" H 4550 5800 50  0001 C CNN
+F 3 "~" H 4550 5800 50  0001 C CNN
+	1    4550 5800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5000 5500 4950 5500
+Wire Wire Line
+	4550 5600 4550 5700
+Wire Wire Line
+	4550 5500 4300 5500
+Wire Wire Line
+	4550 5900 4550 6050
+Wire Wire Line
+	4550 6050 3600 6050
+Wire Wire Line
+	4300 5800 4300 5950
+Wire Wire Line
+	4300 5950 3350 5950
+Wire Wire Line
+	4950 5600 5100 5600
+Connection ~ 5000 3900
+Connection ~ 5100 4000
+$Comp
+L Device:D D4
+U 1 1 60D50818
+P 5250 1550
+F 0 "D4" V 5296 1470 50  0000 R CNN
+F 1 "D" V 5205 1470 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 5250 1550 50  0001 C CNN
+F 3 "~" H 5250 1550 50  0001 C CNN
+	1    5250 1550
+	0    -1   -1   0   
+$EndComp
+Text GLabel 5950 1250 1    50   Input ~ 0
+col4
+$Comp
+L Switch:SW_Push_LED SW4
+U 1 1 60D50823
+P 5700 1500
+F 0 "SW4" H 5700 1785 50  0000 C CNN
+F 1 "SW_Push" H 5700 1694 50  0000 C CNN
+F 2 "keeblib:PG1350_socket_smdLed" H 5700 1700 50  0001 C CNN
+F 3 "~" H 5700 1700 50  0001 C CNN
+	1    5700 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R4
+U 1 1 60D5082F
+P 5500 1700
+F 0 "R4" H 5432 1654 50  0000 R CNN
+F 1 "R" H 5432 1745 50  0000 R CNN
+F 2 "Resistor_SMD:R_MiniMELF_MMA-0204" H 5500 1700 50  0001 C CNN
+F 3 "~" H 5500 1700 50  0001 C CNN
+	1    5500 1700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5950 1250 5950 1400
+Wire Wire Line
+	5950 1400 5900 1400
+Wire Wire Line
+	5500 1500 5500 1600
+Wire Wire Line
+	5500 1800 5500 1950
+Wire Wire Line
+	5500 1950 4550 1950
+Wire Wire Line
+	5250 1700 5250 1850
+Wire Wire Line
+	6050 1500 6050 2050
+$Comp
+L Device:D D14
+U 1 1 60D50847
+P 5250 2450
+F 0 "D14" V 5296 2370 50  0000 R CNN
+F 1 "D" V 5205 2370 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 5250 2450 50  0001 C CNN
+F 3 "~" H 5250 2450 50  0001 C CNN
+	1    5250 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push_LED SW14
+U 1 1 60D50851
+P 5700 2400
+F 0 "SW14" H 5700 2685 50  0000 C CNN
+F 1 "SW_Push" H 5700 2594 50  0000 C CNN
+F 2 "keeblib:PG1350_socket_smdLed" H 5700 2600 50  0001 C CNN
+F 3 "~" H 5700 2600 50  0001 C CNN
+	1    5700 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R14
+U 1 1 60D5085C
+P 5500 2600
+F 0 "R14" H 5432 2554 50  0000 R CNN
+F 1 "R" H 5432 2645 50  0000 R CNN
+F 2 "Resistor_SMD:R_MiniMELF_MMA-0204" H 5500 2600 50  0001 C CNN
+F 3 "~" H 5500 2600 50  0001 C CNN
+	1    5500 2600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5950 2300 5900 2300
+Wire Wire Line
+	5500 2400 5500 2500
+Wire Wire Line
+	5500 2700 5500 2850
+Wire Wire Line
+	5500 2850 4550 2850
+Wire Wire Line
+	5250 2600 5250 2750
+Wire Wire Line
+	5900 2400 6050 2400
+$Comp
+L Device:D D24
+U 1 1 60D5086E
+P 5250 3250
+F 0 "D24" V 5296 3170 50  0000 R CNN
+F 1 "D" V 5205 3170 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 5250 3250 50  0001 C CNN
+F 3 "~" H 5250 3250 50  0001 C CNN
+	1    5250 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push_LED SW24
+U 1 1 60D50878
+P 5700 3200
+F 0 "SW24" H 5700 3485 50  0000 C CNN
+F 1 "SW_Push" H 5700 3394 50  0000 C CNN
+F 2 "keeblib:PG1350_socket_smdLed" H 5700 3400 50  0001 C CNN
+F 3 "~" H 5700 3400 50  0001 C CNN
+	1    5700 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R24
+U 1 1 60D50883
+P 5500 3400
+F 0 "R24" H 5432 3354 50  0000 R CNN
+F 1 "R" H 5432 3445 50  0000 R CNN
+F 2 "Resistor_SMD:R_MiniMELF_MMA-0204" H 5500 3400 50  0001 C CNN
+F 3 "~" H 5500 3400 50  0001 C CNN
+	1    5500 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5950 2300 5950 3100
+Wire Wire Line
+	5950 3100 5900 3100
+Wire Wire Line
+	6050 2400 6050 3200
+Wire Wire Line
+	5500 3200 5500 3300
+Wire Wire Line
+	5500 3500 5500 3650
+Wire Wire Line
+	5500 3650 4550 3650
+Wire Wire Line
+	5250 3400 5250 3550
+Wire Wire Line
+	5900 3200 6050 3200
+Connection ~ 5950 3100
+Connection ~ 6050 3200
+Wire Wire Line
+	5950 3100 5950 3900
+Wire Wire Line
+	6050 3200 6050 4000
+$Comp
+L Device:D D34
+U 1 1 60D5089B
+P 5250 4050
+F 0 "D34" V 5296 3970 50  0000 R CNN
+F 1 "D" V 5205 3970 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 5250 4050 50  0001 C CNN
+F 3 "~" H 5250 4050 50  0001 C CNN
+	1    5250 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push_LED SW34
+U 1 1 60D508A5
+P 5700 4000
+F 0 "SW34" H 5700 4285 50  0000 C CNN
+F 1 "SW_Push" H 5700 4194 50  0000 C CNN
+F 2 "keeblib:PG1350_socket_smdLed" H 5700 4200 50  0001 C CNN
+F 3 "~" H 5700 4200 50  0001 C CNN
+	1    5700 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R34
+U 1 1 60D508B0
+P 5500 4200
+F 0 "R34" H 5432 4154 50  0000 R CNN
+F 1 "R" H 5432 4245 50  0000 R CNN
+F 2 "Resistor_SMD:R_MiniMELF_MMA-0204" H 5500 4200 50  0001 C CNN
+F 3 "~" H 5500 4200 50  0001 C CNN
+	1    5500 4200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5950 3900 5900 3900
+Wire Wire Line
+	5500 4000 5500 4100
+Wire Wire Line
+	5500 4300 5500 4450
+Wire Wire Line
+	5500 4450 4550 4450
+Wire Wire Line
+	5250 4200 5250 4350
+Wire Wire Line
+	5900 4000 6050 4000
+Connection ~ 5950 2300
+Connection ~ 6050 2400
+$Comp
+L Device:D D44
+U 1 1 60D508C4
+P 5250 4850
+F 0 "D44" V 5296 4770 50  0000 R CNN
+F 1 "D" V 5205 4770 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 5250 4850 50  0001 C CNN
+F 3 "~" H 5250 4850 50  0001 C CNN
+	1    5250 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push_LED SW44
+U 1 1 60D508CE
+P 5700 4800
+F 0 "SW44" H 5700 5085 50  0000 C CNN
+F 1 "SW_Push" H 5700 4994 50  0000 C CNN
+F 2 "keeblib:PG1350_socket_smdLed" H 5700 5000 50  0001 C CNN
+F 3 "~" H 5700 5000 50  0001 C CNN
+	1    5700 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R44
+U 1 1 60D508D9
+P 5500 5000
+F 0 "R44" H 5432 4954 50  0000 R CNN
+F 1 "R" H 5432 5045 50  0000 R CNN
+F 2 "Resistor_SMD:R_MiniMELF_MMA-0204" H 5500 5000 50  0001 C CNN
+F 3 "~" H 5500 5000 50  0001 C CNN
+	1    5500 5000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5950 3900 5950 4700
+Wire Wire Line
+	5950 4700 5900 4700
+Wire Wire Line
+	6050 4000 6050 4800
+Wire Wire Line
+	5500 4800 5500 4900
+Wire Wire Line
+	5500 5100 5500 5250
+Wire Wire Line
+	5500 5250 4550 5250
+Wire Wire Line
+	5250 5000 5250 5150
+Wire Wire Line
+	5900 4800 6050 4800
+Connection ~ 5950 4700
+Connection ~ 6050 4800
+Wire Wire Line
+	5950 4700 5950 5500
+Wire Wire Line
+	6050 4800 6050 5600
+$Comp
+L Device:D D54
+U 1 1 60D508F1
+P 5250 5650
+F 0 "D54" V 5296 5570 50  0000 R CNN
+F 1 "D" V 5205 5570 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 5250 5650 50  0001 C CNN
+F 3 "~" H 5250 5650 50  0001 C CNN
+	1    5250 5650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push_LED SW54
+U 1 1 60D508FB
+P 5700 5600
+F 0 "SW54" H 5700 5885 50  0000 C CNN
+F 1 "SW_Push" H 5700 5794 50  0000 C CNN
+F 2 "keeblib:PG1350_socket_smdLed" H 5700 5800 50  0001 C CNN
+F 3 "~" H 5700 5800 50  0001 C CNN
+	1    5700 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R54
+U 1 1 60D50906
+P 5500 5800
+F 0 "R54" H 5432 5754 50  0000 R CNN
+F 1 "R" H 5432 5845 50  0000 R CNN
+F 2 "Resistor_SMD:R_MiniMELF_MMA-0204" H 5500 5800 50  0001 C CNN
+F 3 "~" H 5500 5800 50  0001 C CNN
+	1    5500 5800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5950 5500 5900 5500
+Wire Wire Line
+	5500 5600 5500 5700
+Wire Wire Line
+	5500 5900 5500 6050
+Wire Wire Line
+	5500 6050 4550 6050
+Wire Wire Line
+	5250 5800 5250 5950
+Wire Wire Line
+	5900 5600 6050 5600
+Connection ~ 5950 3900
+Connection ~ 6050 4000
+Connection ~ 4300 1850
+Connection ~ 4300 2750
+Connection ~ 4300 3550
+Connection ~ 4300 4350
+Connection ~ 4300 5150
+Connection ~ 4300 5950
+Connection ~ 4550 1950
+Connection ~ 4550 2850
+Connection ~ 4550 3650
+Connection ~ 4550 4450
+Connection ~ 4550 5250
+Connection ~ 4550 6050
+Connection ~ 3350 1850
+Connection ~ 3350 2750
+Connection ~ 3350 3550
+Connection ~ 3350 4350
+Connection ~ 3350 5150
+Connection ~ 3350 5950
+Connection ~ 3600 1950
+Connection ~ 3600 2850
+Connection ~ 3600 3650
+Connection ~ 3600 4450
+Connection ~ 3600 5250
+Connection ~ 3600 6050
+$Comp
+L Switch:SW_Push_LED SW0
+U 1 1 604DD518
+P 1800 1500
+F 0 "SW0" H 1800 1785 50  0000 C CNN
+F 1 "SW_Push" H 1800 1694 50  0000 C CNN
+F 2 "keeblib:PG1350_socket_smdLed" H 1800 1700 50  0001 C CNN
+F 3 "~" H 1800 1700 50  0001 C CNN
+	1    1800 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R33
+U 1 1 60D507AE
+P 4550 4200
+F 0 "R33" H 4482 4154 50  0000 R CNN
+F 1 "R" H 4482 4245 50  0000 R CNN
+F 2 "Resistor_SMD:R_MiniMELF_MMA-0204" H 4550 4200 50  0001 C CNN
+F 3 "~" H 4550 4200 50  0001 C CNN
+	1    4550 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D33
+U 1 1 60D50799
+P 4300 4050
+F 0 "D33" V 4346 3970 50  0000 R CNN
+F 1 "D" V 4255 3970 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 4300 4050 50  0001 C CNN
+F 3 "~" H 4300 4050 50  0001 C CNN
+	1    4300 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push_LED SW33
+U 1 1 60D507A3
+P 4750 4000
+F 0 "SW33" H 4750 4285 50  0000 C CNN
+F 1 "SW_Push" H 4750 4194 50  0000 C CNN
+F 2 "keeblib:PG1350_socket_smdLed" H 4750 4200 50  0001 C CNN
+F 3 "~" H 4750 4200 50  0001 C CNN
+	1    4750 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 5500 5250 5500
+Wire Wire Line
+	5500 4700 5250 4700
+Wire Wire Line
+	5500 3900 5250 3900
+Wire Wire Line
+	5500 3100 5250 3100
+Wire Wire Line
+	5500 2300 5250 2300
+Wire Wire Line
+	5500 1400 5250 1400
+Wire Wire Line
+	5250 5950 4300 5950
+Wire Wire Line
+	5250 5150 4300 5150
+Wire Wire Line
+	5250 4350 4300 4350
+Wire Wire Line
+	5250 3550 4300 3550
+Wire Wire Line
+	5250 2750 4300 2750
+Wire Wire Line
+	5250 1850 4300 1850
+$Comp
+L Device:D D5
+U 1 1 60E10BF1
+P 6200 1550
+F 0 "D5" V 6246 1470 50  0000 R CNN
+F 1 "D" V 6155 1470 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 6200 1550 50  0001 C CNN
+F 3 "~" H 6200 1550 50  0001 C CNN
+	1    6200 1550
+	0    -1   -1   0   
+$EndComp
+Text GLabel 6900 1250 1    50   Input ~ 0
+col5
+$Comp
+L Switch:SW_Push_LED SW5
+U 1 1 60E113C8
+P 6650 1500
+F 0 "SW5" H 6650 1785 50  0000 C CNN
+F 1 "SW_Push" H 6650 1694 50  0000 C CNN
+F 2 "keeblib:PG1350_socket_smdLed" H 6650 1700 50  0001 C CNN
+F 3 "~" H 6650 1700 50  0001 C CNN
+	1    6650 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R5
+U 1 1 60E113D4
+P 6450 1700
+F 0 "R5" H 6382 1654 50  0000 R CNN
+F 1 "R" H 6382 1745 50  0000 R CNN
+F 2 "Resistor_SMD:R_MiniMELF_MMA-0204" H 6450 1700 50  0001 C CNN
+F 3 "~" H 6450 1700 50  0001 C CNN
+	1    6450 1700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6900 1250 6900 1400
+Wire Wire Line
+	6900 1400 6850 1400
+Wire Wire Line
+	6450 1500 6450 1600
+Wire Wire Line
+	6450 1800 6450 1950
+Wire Wire Line
+	6450 1950 5500 1950
+Wire Wire Line
+	6200 1700 6200 1850
+$Comp
+L Device:D D15
+U 1 1 60E113EA
+P 6200 2450
+F 0 "D15" V 6246 2370 50  0000 R CNN
+F 1 "D" V 6155 2370 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 6200 2450 50  0001 C CNN
+F 3 "~" H 6200 2450 50  0001 C CNN
+	1    6200 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push_LED SW15
+U 1 1 60E113F4
+P 6650 2400
+F 0 "SW15" H 6650 2685 50  0000 C CNN
+F 1 "SW_Push" H 6650 2594 50  0000 C CNN
+F 2 "keeblib:PG1350_socket_smdLed" H 6650 2600 50  0001 C CNN
+F 3 "~" H 6650 2600 50  0001 C CNN
+	1    6650 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R15
+U 1 1 60E113FF
+P 6450 2600
+F 0 "R15" H 6382 2554 50  0000 R CNN
+F 1 "R" H 6382 2645 50  0000 R CNN
+F 2 "Resistor_SMD:R_MiniMELF_MMA-0204" H 6450 2600 50  0001 C CNN
+F 3 "~" H 6450 2600 50  0001 C CNN
+	1    6450 2600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6900 2300 6850 2300
+Wire Wire Line
+	6450 2400 6450 2500
+Wire Wire Line
+	6450 2700 6450 2850
+Wire Wire Line
+	6450 2850 5500 2850
+Wire Wire Line
+	6200 2600 6200 2750
+Wire Wire Line
+	6850 2400 7000 2400
+$Comp
+L Device:D D25
+U 1 1 60E1140F
+P 6200 3250
+F 0 "D25" V 6246 3170 50  0000 R CNN
+F 1 "D" V 6155 3170 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 6200 3250 50  0001 C CNN
+F 3 "~" H 6200 3250 50  0001 C CNN
+	1    6200 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push_LED SW25
+U 1 1 60E11419
+P 6650 3200
+F 0 "SW25" H 6650 3485 50  0000 C CNN
+F 1 "SW_Push" H 6650 3394 50  0000 C CNN
+F 2 "keeblib:PG1350_socket_smdLed" H 6650 3400 50  0001 C CNN
+F 3 "~" H 6650 3400 50  0001 C CNN
+	1    6650 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R25
+U 1 1 60E11424
+P 6450 3400
+F 0 "R25" H 6382 3354 50  0000 R CNN
+F 1 "R" H 6382 3445 50  0000 R CNN
+F 2 "Resistor_SMD:R_MiniMELF_MMA-0204" H 6450 3400 50  0001 C CNN
+F 3 "~" H 6450 3400 50  0001 C CNN
+	1    6450 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6900 2300 6900 3100
+Wire Wire Line
+	6900 3100 6850 3100
+Wire Wire Line
+	7000 2400 7000 3200
+Wire Wire Line
+	6450 3200 6450 3300
+Wire Wire Line
+	6450 3500 6450 3650
+Wire Wire Line
+	6450 3650 5500 3650
+Wire Wire Line
+	6200 3400 6200 3550
+Wire Wire Line
+	6850 3200 7000 3200
+Connection ~ 6900 3100
+Connection ~ 7000 3200
+Wire Wire Line
+	6900 3100 6900 3900
+Wire Wire Line
+	7000 3200 7000 4000
+$Comp
+L Device:D D35
+U 1 1 60E1143A
+P 6200 4050
+F 0 "D35" V 6246 3970 50  0000 R CNN
+F 1 "D" V 6155 3970 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 6200 4050 50  0001 C CNN
+F 3 "~" H 6200 4050 50  0001 C CNN
+	1    6200 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push_LED SW35
+U 1 1 60E11444
+P 6650 4000
+F 0 "SW35" H 6650 4285 50  0000 C CNN
+F 1 "SW_Push" H 6650 4194 50  0000 C CNN
+F 2 "keeblib:PG1350_socket_smdLed" H 6650 4200 50  0001 C CNN
+F 3 "~" H 6650 4200 50  0001 C CNN
+	1    6650 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R35
+U 1 1 60E1144F
+P 6450 4200
+F 0 "R35" H 6382 4154 50  0000 R CNN
+F 1 "R" H 6382 4245 50  0000 R CNN
+F 2 "Resistor_SMD:R_MiniMELF_MMA-0204" H 6450 4200 50  0001 C CNN
+F 3 "~" H 6450 4200 50  0001 C CNN
+	1    6450 4200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6900 3900 6850 3900
+Wire Wire Line
+	6450 4000 6450 4100
+Wire Wire Line
+	6450 4300 6450 4450
+Wire Wire Line
+	6450 4450 5500 4450
+Wire Wire Line
+	6200 4200 6200 4350
+Wire Wire Line
+	6850 4000 7000 4000
+Connection ~ 6900 2300
+Connection ~ 7000 2400
+$Comp
+L Device:D D45
+U 1 1 60E11461
+P 6200 4850
+F 0 "D45" V 6246 4770 50  0000 R CNN
+F 1 "D" V 6155 4770 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 6200 4850 50  0001 C CNN
+F 3 "~" H 6200 4850 50  0001 C CNN
+	1    6200 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push_LED SW45
+U 1 1 60E1146B
+P 6650 4800
+F 0 "SW45" H 6650 5085 50  0000 C CNN
+F 1 "SW_Push" H 6650 4994 50  0000 C CNN
+F 2 "keeblib:PG1350_socket_smdLed" H 6650 5000 50  0001 C CNN
+F 3 "~" H 6650 5000 50  0001 C CNN
+	1    6650 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R45
+U 1 1 60E11476
+P 6450 5000
+F 0 "R45" H 6382 4954 50  0000 R CNN
+F 1 "R" H 6382 5045 50  0000 R CNN
+F 2 "Resistor_SMD:R_MiniMELF_MMA-0204" H 6450 5000 50  0001 C CNN
+F 3 "~" H 6450 5000 50  0001 C CNN
+	1    6450 5000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6900 3900 6900 4700
+Wire Wire Line
+	6900 4700 6850 4700
+Wire Wire Line
+	7000 4000 7000 4800
+Wire Wire Line
+	6450 4800 6450 4900
+Wire Wire Line
+	6450 5100 6450 5250
+Wire Wire Line
+	6450 5250 5500 5250
+Wire Wire Line
+	6200 5000 6200 5150
+Wire Wire Line
+	6850 4800 7000 4800
+Connection ~ 6900 4700
+Connection ~ 7000 4800
+Wire Wire Line
+	7000 4800 7000 5600
+$Comp
+L Device:D D55
+U 1 1 60E1148C
+P 6200 5650
+F 0 "D55" V 6246 5570 50  0000 R CNN
+F 1 "D" V 6155 5570 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 6200 5650 50  0001 C CNN
+F 3 "~" H 6200 5650 50  0001 C CNN
+	1    6200 5650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push_LED SW55
+U 1 1 60E11496
+P 6650 5600
+F 0 "SW55" H 6650 5885 50  0000 C CNN
+F 1 "SW_Push" H 6650 5794 50  0000 C CNN
+F 2 "keeblib:PG1350_socket_smdLed" H 6650 5800 50  0001 C CNN
+F 3 "~" H 6650 5800 50  0001 C CNN
+	1    6650 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R55
+U 1 1 60E114A1
+P 6450 5800
+F 0 "R55" H 6382 5754 50  0000 R CNN
+F 1 "R" H 6382 5845 50  0000 R CNN
+F 2 "Resistor_SMD:R_MiniMELF_MMA-0204" H 6450 5800 50  0001 C CNN
+F 3 "~" H 6450 5800 50  0001 C CNN
+	1    6450 5800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6900 5500 6850 5500
+Wire Wire Line
+	6450 5600 6450 5700
+Wire Wire Line
+	6450 5900 6450 6050
+Wire Wire Line
+	6450 6050 5500 6050
+Wire Wire Line
+	6200 5800 6200 5950
+Wire Wire Line
+	6850 5600 7000 5600
+Connection ~ 6900 3900
+Connection ~ 7000 4000
+Wire Wire Line
+	6450 5500 6200 5500
+Wire Wire Line
+	6450 4700 6200 4700
+Wire Wire Line
+	6450 3900 6200 3900
+Wire Wire Line
+	6450 3100 6200 3100
+Wire Wire Line
+	6450 2300 6200 2300
+Wire Wire Line
+	6450 1400 6200 1400
+Wire Wire Line
+	6200 5950 5250 5950
+Wire Wire Line
+	6200 5150 5250 5150
+Wire Wire Line
+	6200 4350 5250 4350
+Wire Wire Line
+	6200 3550 5250 3550
+Wire Wire Line
+	6200 2750 5250 2750
+Wire Wire Line
+	6200 1850 5250 1850
+Connection ~ 5250 1850
+Connection ~ 5250 2750
+Connection ~ 5250 3550
+Connection ~ 5250 4350
+Connection ~ 5250 5150
+Connection ~ 5250 5950
+Connection ~ 5500 1950
+Connection ~ 5500 2850
+Connection ~ 5500 3650
+Connection ~ 5500 4450
+Connection ~ 5500 5250
+Connection ~ 5500 6050
+$Comp
+L Device:D D60
+U 1 1 60E7AD1B
+P 1350 6450
+F 0 "D60" V 1396 6370 50  0000 R CNN
+F 1 "D" V 1305 6370 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 1350 6450 50  0001 C CNN
+F 3 "~" H 1350 6450 50  0001 C CNN
+	1    1350 6450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push_LED SW60
+U 1 1 60E7B4F1
+P 1800 6400
+F 0 "SW60" H 1800 6685 50  0000 C CNN
+F 1 "SW_Push" H 1800 6594 50  0000 C CNN
+F 2 "keeblib:PG1350_socket_smdLed" H 1800 6600 50  0001 C CNN
+F 3 "~" H 1800 6600 50  0001 C CNN
+	1    1800 6400
+	1    0    0    -1  
+$EndComp
+Text GLabel 1200 6750 0    50   Input ~ 0
+row6
+$Comp
+L Device:R_Small_US R60
+U 1 1 60E7B4FD
+P 1600 6600
+F 0 "R60" H 1532 6554 50  0000 R CNN
+F 1 "R" H 1532 6645 50  0000 R CNN
+F 2 "Resistor_SMD:R_MiniMELF_MMA-0204" H 1600 6600 50  0001 C CNN
+F 3 "~" H 1600 6600 50  0001 C CNN
+	1    1600 6600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2050 6300 2000 6300
+Wire Wire Line
+	1600 6400 1600 6500
+Wire Wire Line
+	1600 6300 1350 6300
+Wire Wire Line
+	1600 6700 1600 6850
+Wire Wire Line
+	1350 6600 1350 6750
+Wire Wire Line
+	1350 6750 1200 6750
+Wire Wire Line
+	2000 6400 2150 6400
+Wire Wire Line
+	2050 5500 2050 6300
+Wire Wire Line
+	3100 5500 3100 6300
+Wire Wire Line
+	3200 5600 3200 6400
+Wire Wire Line
+	2150 5600 2150 6400
+$Comp
+L Device:D D61
+U 1 1 60E7B514
+P 2400 6450
+F 0 "D61" V 2446 6370 50  0000 R CNN
+F 1 "D" V 2355 6370 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 2400 6450 50  0001 C CNN
+F 3 "~" H 2400 6450 50  0001 C CNN
+	1    2400 6450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push_LED SW61
+U 1 1 60E7B51E
+P 2850 6400
+F 0 "SW61" H 2850 6685 50  0000 C CNN
+F 1 "SW_Push" H 2850 6594 50  0000 C CNN
+F 2 "keeblib:PG1350_socket_smdLed" H 2850 6600 50  0001 C CNN
+F 3 "~" H 2850 6600 50  0001 C CNN
+	1    2850 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R61
+U 1 1 60E7B529
+P 2650 6600
+F 0 "R61" H 2582 6554 50  0000 R CNN
+F 1 "R" H 2582 6645 50  0000 R CNN
+F 2 "Resistor_SMD:R_MiniMELF_MMA-0204" H 2650 6600 50  0001 C CNN
+F 3 "~" H 2650 6600 50  0001 C CNN
+	1    2650 6600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3100 6300 3050 6300
+Wire Wire Line
+	2650 6400 2650 6500
+Wire Wire Line
+	2650 6300 2400 6300
+Wire Wire Line
+	2650 6700 2650 6850
+Wire Wire Line
+	2400 6600 2400 6750
+Wire Wire Line
+	2400 6750 1350 6750
+Wire Wire Line
+	3050 6400 3200 6400
+Wire Wire Line
+	4050 5500 4050 6300
+Wire Wire Line
+	4150 5600 4150 6400
+$Comp
+L Device:D D62
+U 1 1 60E7B53F
+P 3350 6450
+F 0 "D62" V 3396 6370 50  0000 R CNN
+F 1 "D" V 3305 6370 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 3350 6450 50  0001 C CNN
+F 3 "~" H 3350 6450 50  0001 C CNN
+	1    3350 6450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push_LED SW62
+U 1 1 60E7B549
+P 3800 6400
+F 0 "SW62" H 3800 6685 50  0000 C CNN
+F 1 "SW_Push" H 3800 6594 50  0000 C CNN
+F 2 "keeblib:PG1350_socket_smdLed" H 3800 6600 50  0001 C CNN
+F 3 "~" H 3800 6600 50  0001 C CNN
+	1    3800 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R62
+U 1 1 60E7B554
+P 3600 6600
+F 0 "R62" H 3532 6554 50  0000 R CNN
+F 1 "R" H 3532 6645 50  0000 R CNN
+F 2 "Resistor_SMD:R_MiniMELF_MMA-0204" H 3600 6600 50  0001 C CNN
+F 3 "~" H 3600 6600 50  0001 C CNN
+	1    3600 6600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4050 6300 4000 6300
+Wire Wire Line
+	3600 6400 3600 6500
+Wire Wire Line
+	3600 6300 3350 6300
+Wire Wire Line
+	3600 6700 3600 6850
+Wire Wire Line
+	3600 6850 2650 6850
+Wire Wire Line
+	3350 6600 3350 6750
+Wire Wire Line
+	3350 6750 2400 6750
+Wire Wire Line
+	4000 6400 4150 6400
+Connection ~ 2400 6750
+Connection ~ 2050 5500
+Connection ~ 2150 5600
+Connection ~ 3100 5500
+Connection ~ 3200 5600
+Connection ~ 4050 5500
+Connection ~ 4150 5600
+$Comp
+L Device:R_US R80
+U 1 1 60FCC55B
+P 9000 3850
+F 0 "R80" H 8932 3804 50  0000 R CNN
+F 1 "4.7k 0204" H 8932 3895 50  0000 R CNN
+F 2 "Resistor_SMD:R_MiniMELF_MMA-0204" V 9040 3840 50  0001 C CNN
+F 3 "~" H 9000 3850 50  0001 C CNN
+	1    9000 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_NMOS_GSD Q1
+U 1 1 60FCE487
+P 9150 4050
+F 0 "Q1" V 9385 4050 50  0000 C CNN
+F 1 "AO3416 N-channel MOSFET" V 9476 4050 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9350 4150 50  0001 C CNN
+F 3 "~" H 9150 4050 50  0001 C CNN
+	1    9150 4050
+	0    1    1    0   
+$EndComp
+Text GLabel 9350 4150 2    50   Input ~ 0
+ledOut
+$Comp
+L power:GND #PWR0104
+U 1 1 611224C2
+P 8950 4150
+F 0 "#PWR0104" H 8950 3900 50  0001 C CNN
+F 1 "GND" V 8955 4022 50  0000 R CNN
+F 2 "" H 8950 4150 50  0001 C CNN
+F 3 "" H 8950 4150 50  0001 C CNN
+	1    8950 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0105
+U 1 1 61123E86
+P 9850 1700
+F 0 "#PWR0105" H 9850 1550 50  0001 C CNN
+F 1 "VCC" V 9865 1828 50  0000 L CNN
+F 2 "" H 9850 1700 50  0001 C CNN
+F 3 "" H 9850 1700 50  0001 C CNN
+	1    9850 1700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2150 1500 2150 2050
+Wire Wire Line
+	2250 1250 2250 1950
+Wire Wire Line
+	2250 6850 2650 6850
+Connection ~ 2650 6850
+Wire Wire Line
+	1600 6850 2250 6850
+Connection ~ 2250 6850
+Connection ~ 1350 6750
+Connection ~ 1350 5950
+Connection ~ 1350 5150
+Wire Wire Line
+	1600 6050 2250 6050
+Connection ~ 2650 6050
+Connection ~ 2250 6050
+Wire Wire Line
+	2250 6050 2250 6850
+Wire Wire Line
+	2250 6050 2650 6050
+Connection ~ 2050 1400
+Connection ~ 3100 1400
+Connection ~ 4050 1400
+Connection ~ 5000 1400
+Connection ~ 5950 1400
+Connection ~ 6900 1400
+Wire Wire Line
+	6850 1500 7000 1500
+Wire Wire Line
+	6900 1400 6900 2300
+Wire Wire Line
+	5900 1500 6050 1500
+Wire Wire Line
+	5950 1400 5950 2300
+Wire Wire Line
+	4950 1500 5100 1500
+Wire Wire Line
+	5000 1400 5000 2300
+Wire Wire Line
+	4000 1500 4150 1500
+Wire Wire Line
+	4050 1400 4050 2300
+Wire Wire Line
+	3050 1500 3200 1500
+Wire Wire Line
+	3100 1400 3100 2300
+Wire Wire Line
+	2000 1500 2150 1500
+Wire Wire Line
+	2050 1400 2050 2300
+Connection ~ 7000 2050
+Wire Wire Line
+	7000 2050 7000 2400
+Wire Wire Line
+	7000 1500 7000 2050
+Connection ~ 1350 1850
+Wire Wire Line
+	1200 2050 2150 2050
+Wire Wire Line
+	1600 1800 1600 1950
+$Comp
+L power:VCC #PWR0106
+U 1 1 618028B3
+P 1200 2050
+F 0 "#PWR0106" H 1200 1900 50  0001 C CNN
+F 1 "VCC" V 1215 2177 50  0000 L CNN
+F 2 "" H 1200 2050 50  0001 C CNN
+F 3 "" H 1200 2050 50  0001 C CNN
+	1    1200 2050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1600 1950 2250 1950
+Connection ~ 2650 1950
+Connection ~ 2250 1950
+Wire Wire Line
+	2250 1950 2250 2850
+Wire Wire Line
+	2250 1950 2650 1950
+Connection ~ 1350 2750
+Wire Wire Line
+	2650 2850 2250 2850
+Connection ~ 2650 2850
+Wire Wire Line
+	2650 3650 2250 3650
+Connection ~ 2650 3650
+Wire Wire Line
+	2650 4450 2250 4450
+Connection ~ 2650 4450
+Wire Wire Line
+	1600 5250 2250 5250
+Connection ~ 2650 5250
+Connection ~ 2250 5250
+Wire Wire Line
+	2250 5250 2250 6050
+Wire Wire Line
+	2250 5250 2650 5250
+Connection ~ 2250 4450
+Wire Wire Line
+	2250 4450 2250 5250
+Wire Wire Line
+	2250 4450 1600 4450
+Connection ~ 2250 3650
+Wire Wire Line
+	2250 3650 2250 4450
+Wire Wire Line
+	2250 3650 1600 3650
+Connection ~ 2250 2850
+Wire Wire Line
+	2250 2850 2250 3650
+Wire Wire Line
+	2250 2850 1600 2850
+Connection ~ 2150 2050
+Wire Wire Line
+	2150 2050 2150 2400
+Wire Wire Line
+	2150 2050 3200 2050
+Connection ~ 3200 2050
+Wire Wire Line
+	3200 2050 3200 2400
+Wire Wire Line
+	3200 2050 4150 2050
+Connection ~ 4150 2050
+Wire Wire Line
+	4150 2050 4150 2400
+Wire Wire Line
+	4150 2050 5100 2050
+Connection ~ 5100 2050
+Wire Wire Line
+	5100 2050 5100 2400
+Wire Wire Line
+	5100 2050 6050 2050
+Connection ~ 6050 2050
+Wire Wire Line
+	6050 2050 6050 2400
+Wire Wire Line
+	6050 2050 7000 2050
+Wire Wire Line
+	6900 4700 6900 5500
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 61B0011A
+P 9150 5350
+F 0 "#FLG0102" H 9150 5425 50  0001 C CNN
+F 1 "PWR_FLAG" H 9150 5523 50  0000 C CNN
+F 2 "" H 9150 5350 50  0001 C CNN
+F 3 "~" H 9150 5350 50  0001 C CNN
+	1    9150 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0107
+U 1 1 61B03235
+P 9150 5350
+F 0 "#PWR0107" H 9150 5200 50  0001 C CNN
+F 1 "VCC" H 9165 5523 50  0000 C CNN
+F 2 "" H 9150 5350 50  0001 C CNN
+F 3 "" H 9150 5350 50  0001 C CNN
+	1    9150 5350
+	-1   0    0    1   
+$EndComp
+Connection ~ 1350 3550
+Connection ~ 1350 4350
+Text GLabel 9150 3850 1    50   Input ~ 0
+ledTrig
+Text GLabel 9850 2500 2    50   Input ~ 0
+ledTrig
+$Comp
+L power:GND #PWR0108
+U 1 1 605E1CB8
+P 8850 3850
+F 0 "#PWR0108" H 8850 3600 50  0001 C CNN
+F 1 "GND" V 8855 3722 50  0000 R CNN
+F 2 "" H 8850 3850 50  0001 C CNN
+F 3 "" H 8850 3850 50  0001 C CNN
+	1    8850 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:AudioJack4 J01
+U 1 1 605C1CAC
+P 7700 4200
+F 0 "J01" H 7657 4525 50  0000 C CNN
+F 1 "AudioJack4" H 7657 4434 50  0000 C CNN
+F 2 "keeblib:trrs_5400174" H 7700 4200 50  0001 C CNN
+F 3 "~" H 7700 4200 50  0001 C CNN
+	1    7700 4200
+	1    0    0    -1  
+$EndComp
+Text GLabel 7900 4300 2    50   Input ~ 0
+SCL
+Text GLabel 7900 4200 2    50   Input ~ 0
+SDA
+$Comp
+L power:GND #PWR0109
+U 1 1 605C68A4
+P 7900 4100
+F 0 "#PWR0109" H 7900 3850 50  0001 C CNN
+F 1 "GND" V 7905 3972 50  0000 R CNN
+F 2 "" H 7900 4100 50  0001 C CNN
+F 3 "" H 7900 4100 50  0001 C CNN
+	1    7900 4100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR0110
+U 1 1 605C7682
+P 7900 4400
+F 0 "#PWR0110" H 7900 4250 50  0001 C CNN
+F 1 "VCC" V 7915 4528 50  0000 L CNN
+F 2 "" H 7900 4400 50  0001 C CNN
+F 3 "" H 7900 4400 50  0001 C CNN
+	1    7900 4400
+	0    1    1    0   
+$EndComp
+Text GLabel 7500 1900 0    50   Input ~ 0
+SCL
+Text GLabel 7500 1800 0    50   Input ~ 0
+SDA
+$Comp
+L Device:R_US R82
+U 1 1 607DEDE5
+P 7550 2050
+F 0 "R82" H 7482 2004 50  0000 R CNN
+F 1 "4.7k 0204" H 7482 2095 50  0000 R CNN
+F 2 "Resistor_SMD:R_MiniMELF_MMA-0204" V 7590 2040 50  0001 C CNN
+F 3 "~" H 7550 2050 50  0001 C CNN
+	1    7550 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_US R81
+U 1 1 607E0482
+P 7550 1650
+F 0 "R81" H 7482 1604 50  0000 R CNN
+F 1 "4.7k 0204" H 7482 1695 50  0000 R CNN
+F 2 "Resistor_SMD:R_MiniMELF_MMA-0204" V 7590 1640 50  0001 C CNN
+F 3 "~" H 7550 1650 50  0001 C CNN
+	1    7550 1650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0111
+U 1 1 607E210A
+P 7550 2200
+F 0 "#PWR0111" H 7550 2050 50  0001 C CNN
+F 1 "VCC" H 7565 2373 50  0000 C CNN
+F 2 "" H 7550 2200 50  0001 C CNN
+F 3 "" H 7550 2200 50  0001 C CNN
+	1    7550 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0112
+U 1 1 607E3925
+P 7550 1500
+F 0 "#PWR0112" H 7550 1350 50  0001 C CNN
+F 1 "VCC" H 7565 1673 50  0000 C CNN
+F 2 "" H 7550 1500 50  0001 C CNN
+F 3 "" H 7550 1500 50  0001 C CNN
+	1    7550 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 1800 7550 1800
+Connection ~ 7550 1800
+Wire Wire Line
+	7550 1800 7500 1800
+Wire Wire Line
+	8450 1900 7550 1900
+Connection ~ 7550 1900
+Wire Wire Line
+	7550 1900 7500 1900
+$EndSCHEMATC
