@@ -577,7 +577,7 @@ U 1 1 609BC7C6
 P 7400 3500
 F 0 "U0" H 7400 4200 50  0000 C CNN
 F 1 "SeeeduinoXIAO-keebMCU" H 7400 4100 50  0000 C CNN
-F 2 "keebMCU:Seeeduino_XIAO_dual_tht" H 7050 3700 50  0001 C CNN
+F 2 "keeblib:Seeeduino_XIAO_dual_tht" H 7050 3700 50  0001 C CNN
 F 3 "" H 7050 3700 50  0001 C CNN
 	1    7400 3500
 	1    0    0    -1  

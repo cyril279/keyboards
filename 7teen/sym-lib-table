@@ -1,3 +1,6 @@
 (sym_lib_table
-  (lib (name foostan)(type Legacy)(uri /home/cyril/workbench/github/kbd/kicad-symbols/kbd.lib)(options "")(descr ""))
+  (lib (name foostan)(type Legacy)(uri /home/cyril/workbench/github/kbd/kicad-symbols/kbd.lib)(options "")(descr "")(disabled))
+  (lib (name keebMCU)(type Legacy)(uri ${KIPRJMOD}/../keebMCU.pretty/keebMCU.lib)(options "")(descr ""))
+  (lib (name keeblib)(type Legacy)(uri ${KIPRJMOD}/../keeblib.pretty/keebio.lib)(options "")(descr ""))
+  (lib (name 7teen-rescue)(type Legacy)(uri ${KIPRJMOD}/7teen-rescue.lib)(options "")(descr ""))
 )

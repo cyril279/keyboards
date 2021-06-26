@@ -1,4 +1,4 @@
-19290956938648712
+19180201113360348
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -83026,20 +83026,48 @@ varistor SIOV
 0
 2
 2
-keeblib
+keebMCU
 ArduinoProMicro
 
 
 0
 24
 24
-keeblib
-ArduinoProMicroPlus
+keebMCU
+ProMicroNiced
 
 
 0
-25
-25
+26
+26
+keebMCU
+Seeeduino XIAO-MOUDLE14P-2.54-21X17.8MM
+
+
+0
+20
+20
+keebMCU
+Seeeduino_XIAO-MOUDLE14P-2.54-21X17.8MM
+
+
+0
+14
+14
+keebMCU
+Seeeduino_XIAO_dual
+
+
+0
+40
+20
+keebMCU
+Seeeduino_XIAO_dual_tht
+
+
+0
+28
+14
 keeblib
 CherryMX_ChocV2_1u
 
@@ -83132,34 +83160,6 @@ kailh,choc
 4
 4
 keeblib
-Seeeduino XIAO-MOUDLE14P-2.54-21X17.8MM
-
-
-0
-20
-20
-keeblib
-Seeeduino_XIAO-MOUDLE14P-2.54-21X17.8MM
-
-
-0
-14
-14
-keeblib
-Seeeduino_XIAO_dual
-
-
-0
-40
-20
-keeblib
-Seeeduino_XIAO_dual_tht
-
-
-0
-28
-14
-keeblib
 alps_sksn
 
 
@@ -83174,7 +83174,7 @@ cell_pads
 2
 2
 keeblib
-edgecuts_7teen
+chain_200mm
 
 
 0
@@ -83182,34 +83182,6 @@ edgecuts_7teen
 0
 keeblib
 layout-pro-micro
-
-
-0
-0
-0
-keeblib
-layout_7teen
-
-
-0
-0
-0
-keeblib
-layout_r39
-
-
-0
-0
-0
-keeblib
-layout_r41
-
-
-0
-0
-0
-keeblib
-layout_rev39v0.2
 
 
 0
@@ -83230,6 +83202,13 @@ pg1353
 4
 2
 keeblib
+pg1353_2u
+
+
+0
+4
+2
+keeblib
 pg1353_dual
 
 
@@ -83244,49 +83223,7 @@ pg1353_reversible_2u
 6
 2
 keeblib
-r3926lp_edgecut_switchPlate
-
-
-0
-0
-0
-keeblib
-r3926lp_switchPlate_outline
-
-
-0
-0
-0
-keeblib
-r3926lp_switchPlate_switches
-
-
-0
-1
-1
-keeblib
-rev39_layout
-
-
-0
-0
-0
-keeblib
-rev39_outline
-
-
-0
-0
-0
-keeblib
-rev41lp_edgecutPCB
-
-
-0
-0
-0
-keeblib
-rev41lp_edgecutSwitchPlate
+ratNY_77mm
 
 
 0
