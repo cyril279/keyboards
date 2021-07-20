@@ -6,6 +6,7 @@ Core functionality only requires diodes, hotswap sockets, and a pro-micro compat
 Controller must be soldered on face-down.  
 I highly recommend socketing the controller.  
 ![build03](https://imgur.com/rJ1ZKQ3.jpg)  
+![build035](https://imgur.com/vMzloyC.jpg)
 
 The black strips are .063", adhesive-backed neoprene foam. They provide support while inserting switches, and slightly damp the acoustics of the assembly.  
 ![build04](https://imgur.com/et9bksr.jpg)  

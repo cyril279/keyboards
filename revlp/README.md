@@ -4,5 +4,7 @@ Inspired by the [reviung series](https://github.com/gtips/reviung), designed spe
 39_1350 | 39-key Reviung, 18x17mm spacing, v1 switches; hotswap, single-color backlit
 
 [41_1350](./41_1350) | 41-key Reviung, 18x17mm spacing, v1 switches; hotswap, single-color backlit
+[<img src="https://imgur.com/nZNHSaW.jpg" height="300">](./41_1350)
 
 [41_1353](./41_1353) | 41-key Reviung, 19mm square spacing, v2 (& v1) switches; soldered switches, no lighting
+[<img src="https://imgur.com/OAZSbkP.jpg" height="300">](./41_1353)
