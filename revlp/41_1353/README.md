@@ -9,9 +9,9 @@ This is as low as MX gets.
 
 **Firmware:** The pinout is the same as the original reviung41, so the existing Reviung41 firmware ([QMK](https://github.com/qmk/qmk_firmware/tree/master/keyboards/reviung41) or [ZMK](https://zmk.dev/docs/hardware#keyboard-shields)) works for this device.  
 
-**Build pics:** [Work-in-progress](build.md)  
+**[[ Build Guide ]](build.md)** (work-in-progress)  
 
-**Stabilizer:** [See here for installation](https://imgur.com/a/yLdvf3C).  
+**[[ Stabilizer Installation ]](build.md#stabilizer-installation)**  
 I have not yet provided guidance on how to mod the bar from its stock-state to work with choc-v2 switches.  
 The offset/bent portion of the bar needs to be nearly flat.  
 
