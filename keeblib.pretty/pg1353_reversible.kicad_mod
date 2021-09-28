@@ -1,4 +1,4 @@
-(module pg1353_dual (layer F.Cu) (tedit 60A40F88)
+(module pg1353_reversible (layer F.Cu) (tedit 60A40F88)
   (fp_text reference SW* (at 3.83 6.68 180) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -25,9 +25,4 @@
   (pad 1 thru_hole circle (at 5 3.8) (size 2.2 2.2) (drill 1.2) (layers *.Cu *.Mask))
   (pad "" thru_hole oval (at -5 -5.55) (size 2 1.5) (drill oval 1 0.3) (layers *.Cu *.Mask))
   (pad "" smd rect (at 0 -4.93) (size 5.5 2.95) (layers Dwgs.User))
-  (model /Users/foostan/src/github.com/foostan/kbd/kicad-packages3D/kbd.3dshapes/kailh_choc.step
-    (at (xyz 0 0 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 180))
-  )
 )
