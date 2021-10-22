@@ -7,7 +7,7 @@ Inspired by the [reviung series](https://github.com/gtips/reviung), designed spe
 
 ### Firmware
 [QMK](https://github.com/DubMoto/qmk_firmware/tree/cy41/keyboards/b_sides/rev41lp)  
-[ZMK](https://github.com/cyril279/zmk-config/tree/main/config)
+[ZMK](https://github.com/cyril279/zmk-config-rev41_1350/tree/main/config)
 
 ### Geometric differences from the reviung series:  
 - 18mm x 17mm choc key-spacing
