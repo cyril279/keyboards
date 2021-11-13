@@ -1,4 +1,5 @@
-revlp/one42/one42_pcb/one42-backups/
+one42/**/jlcpcb*
+one42-backups
 *.kicad_prl
 *.sch-bak
 *.kicad_pcb-bak
