@@ -1,5 +1,6 @@
 one42/**/jlcpcb*
-one42-backups
+*-backups/
+*fp-info-cache
 *.kicad_prl
 *.sch-bak
 *.kicad_pcb-bak
