@@ -21,7 +21,7 @@ I am thinking about two approaches:
 2) A minimal case to be 3d-printed. This for aesthetics, at the cost of affordability.  
 
 ## Thank You.
-[gtips reviung41](https://github.com/gtips/reviung) is the initial inspiration  
-[dezli’s ahokore](https://github.com/dezlidezlidezli/ahokore) is the template  
-The low-profile-keyboard discord server is wonderfully encouraging and supportive  
-All things open-source allow us normies to achieve cool stuffs!  
+- [gtips reviung41](https://github.com/gtips/reviung) was the initial inspiration  
+- [dezli’s ahokore](https://github.com/dezlidezlidezli/ahokore) was the schematic-template  
+- The [low-profile keyboard discord](https://discord.gg/eEK5yUh) is wonderfully encouraging and supportive  
+- All things open-source!  
