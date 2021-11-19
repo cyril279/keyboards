@@ -18,7 +18,15 @@ good question. maybe probably.
 I am thinking about two approaches:  
 1) An additional 1/16”thk material (pcb?) to attach to the bottom of the main-pcb so that the pokey-bits of the switches will be flush with the bottom of the unit.  
     This facilitates the application of an adhesive foam bottom layer.  This is the most affordable approach to something that is both protective and more back-pack friendly.  
-2) A minimal case to be 3d-printed. This for aesthetics, at the cost of affordability.  
+2) A minimal case to be 3d-printed.
+
+## Lessons-learned v0.1
+1) The pg-1353 switches do not self-align well without a switch-plate.  
+  I had hoped (assumed) that the third-leg of the 1353's would do a sufficient job of positioning the switches.  
+  My previous designs all involved switch-plates (for aesthetic reasons) so I was unaware that this would be an issue.    
+  I will likely offer this board with an integrated switch-plate.  
+2) The oval holes for the encoder remove the alignment features for the pg-1350 (choc-v1) switches.  
+  I am hoping that the integrated switch-plate can also cover this issue.  
 
 ## Thank You.
 - [gtips reviung41](https://github.com/gtips/reviung) was the initial inspiration  
