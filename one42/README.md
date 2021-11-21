@@ -1,4 +1,4 @@
-# One42 | 42-key 30deg. angled-unsplit
+# One42 | 42-key Wireless
 ![image](photos/PXL_20211120_181353850.jpg)
 
 - v2 (& v1) choc switches (soldered)
@@ -6,7 +6,6 @@
 - 18.8mm sq.spacing (most keycap dimensions are actually 18.0-18.3mm)
 - 30 degree angled halves
 - Rotary encoders (2x optional) at outer-thumb positions **
-- No lighting. I value compact-wireless more than rgb’s and bigger batteries.
 - Hand-solderable
 
 ## Firmware
