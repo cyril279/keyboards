@@ -1,5 +1,5 @@
 (fp_lib_table
   (lib (name "keebLib")(type "KiCad")(uri "${KIPRJMOD}/../../keeblib.pretty")(options "")(descr ""))
   (lib (name "keebMCU")(type "KiCad")(uri "${KIPRJMOD}/../../keebMCU.pretty")(options "")(descr ""))
-  (lib (name "one42")(type "KiCad")(uri "${KIPRJMOD}/../one42_pcb/one42.pretty")(options "")(descr ""))
+  (lib (name "one42")(type "KiCad")(uri "${KIPRJMOD}/../one42.pretty")(options "")(descr ""))
 )
