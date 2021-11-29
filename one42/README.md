@@ -36,6 +36,6 @@ I am thinking about two approaches:
 
 ## Thank You.
 - [gtips reviung41](https://github.com/gtips/reviung) was the initial inspiration  
-- [dezli’s ahokore](https://github.com/dezlidezlidezli/ahokore) was the schematic-template  
+- [dezli’s ahokore](https://github.com/dezlidezlidezli/ahokore) was the template for the zmk-config & electrical-schematic  
 - The [low-profile keyboard discord](https://discord.gg/eEK5yUh) is wonderfully encouraging and supportive  
 - All things open-source!  
