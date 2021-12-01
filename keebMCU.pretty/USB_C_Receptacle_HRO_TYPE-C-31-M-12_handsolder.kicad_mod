@@ -1,5 +1,5 @@
-(footprint "USB_C_Receptacle_HRO_TYPE-C-31-M-12_handsolder" (version 20210925) (generator pcbnew) (layer "F.Cu")
-  (tedit 61681974)
+(footprint "USB_C_Receptacle_HRO_TYPE-C-31-M-12_handsolder" (version 20211014) (generator pcbnew) (layer "F.Cu")
+  (tedit 61A79421)
   (descr "USB Type-C receptacle for USB 2.0 and PD, http://www.krhro.com/uploads/soft/180320/1-1P320120243.pdf")
   (tags "usb usb-c 2.0 pd")
   (attr smd)
@@ -50,9 +50,9 @@
   (pad "S1" thru_hole oval locked (at -4.32 1.05) (size 1 1.6) (drill oval 0.6 1.2) (layers *.Cu *.Mask) (tstamp b2fd74f4-8264-47c4-a96a-00fbd1333573))
   (pad "S1" thru_hole oval locked (at 4.32 -3.13) (size 1 2.1) (drill oval 0.6 1.7) (layers *.Cu *.Mask) (tstamp b95cfc80-9cde-4012-9235-1dd3f43b2d73))
   (pad "S1" thru_hole oval locked (at -4.32 -3.13) (size 1 2.1) (drill oval 0.6 1.7) (layers *.Cu *.Mask) (tstamp ca1ea359-3205-46aa-a6f8-8ed31cf26c71))
-  (model "${KICAD6_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_HRO_TYPE-C-31-M-12.wrl"
-    (offset (xyz 0 0 0))
+  (model "C:/Users/cwiggins/Downloads/keyboards/keeblib.pretty/3d/HRO TYPE-C-31-M-12.step"
+    (offset (xyz -4.5 -3.65 0))
     (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
+    (rotate (xyz -90 0 0))
   )
 )
