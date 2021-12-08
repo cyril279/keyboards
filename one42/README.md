@@ -1,5 +1,5 @@
 # One42 | 42-key Wireless
-![image](photos/PXL_20211120_181353850.jpg)
+![image](photos/PXL_20211208_155453569.jpg)
 
 - v2 (& v1) choc switches (soldered)
 - Integrated/onboard wireless controller (holyiot 18010; hello ZMK!)
