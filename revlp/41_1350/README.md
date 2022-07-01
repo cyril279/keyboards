@@ -6,7 +6,7 @@ Inspired by the [reviung series](https://github.com/gtips/reviung), designed spe
 [Build Pics](build.md)  
 
 ### Firmware
-[QMK](https://github.com/DubMoto/qmk_firmware/tree/cy41/keyboards/b_sides/rev41lp)  
+[QMK](https://github.com/qmk/qmk_firmware/tree/master/keyboards/b_sides/rev41lp)  
 [ZMK](https://github.com/cyril279/zmk-config-rev41_1350/tree/main/config)
 
 ### Geometric differences from the reviung series:  
